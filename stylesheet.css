@@ -8,3 +8,10 @@ p {
 	font-size: 16px;
 	color: grey;
 {
+td{
+    height: 50px;
+    border: 1px dashed black;
+    }
+table{
+    border: 1px solid black;
+}
