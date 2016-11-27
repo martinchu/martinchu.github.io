@@ -1,8 +1,9 @@
 *{
 	font-family: Tahoma;
 }
-h1{
+.BigHeader{
 	font-size: 40px;
+	font-family: Verdana;
 }
 body{
 	margin: 70px;
