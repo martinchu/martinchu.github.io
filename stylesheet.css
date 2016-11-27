@@ -2,7 +2,11 @@ h1{
 	font-family: Tahoma;
 }
 body{
-	margin: 16px;
+	margin: 100px;
+}
+ul{
+	color:grey
+	font-family:Verdana;
 }
 h3 {
 	font-family: Tahoma, Verdana;
