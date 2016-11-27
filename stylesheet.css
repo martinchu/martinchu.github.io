@@ -1,20 +1,22 @@
 *{
-	font-family: Tahoma;
+	font-family: Helvetica Neue;
 }
 .BigHeader{
 	font-size: 40px;
 	font-family: Verdana;
 }
+.NoBullet{
+	list-style-type: none;
+}
 body{
 	margin: 70px;
 }
-ul li{
-	font-family: inherit;
+ul ul li{
+	font-family: Tahoma;
 }
 p {
-	font-family: Tahoma, Verdana;
+	font-family: Verdana;
 	font-size: 16px;
-	color: grey;
 {
 td{
     height: 50px;
