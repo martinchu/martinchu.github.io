@@ -9,8 +9,14 @@ a:hover{
 	font-size: 40px;
 	font-family: Verdana;
 }
+h2{
+	font-family: Verdana;
+	font-size: 25px;
+	text-indent: 20px;
+}
 .NoBullet{
 	list-style-type: none;
+	font-family: inherit;
 }
 body{
 	margin: 70px;
