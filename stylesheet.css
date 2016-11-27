@@ -1,6 +1,10 @@
 *{
 	font-family: Helvetica Neue;
 }
+a:hover{
+	text-decoration: none;
+	color: grey;
+}
 .BigHeader{
 	font-size: 40px;
 	font-family: Verdana;
