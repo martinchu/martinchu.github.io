@@ -1,16 +1,11 @@
-h1{
+*{
 	font-family: Tahoma;
 }
+h1{
+	font-size: 40px;
+}
 body{
-	margin: 100px;
-}
-ul{
-	color:grey
-	font-family:Verdana;
-}
-h3 {
-	font-family: Tahoma, Verdana;
-	color: grey;
+	margin: 70px;
 }
 
 p {
