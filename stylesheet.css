@@ -20,6 +20,7 @@ h2{
 }
 body{
 	margin: 70px;
+	background-color: #f9fafc;
 }
 ul ul li{
 	font-family: Tahoma;
@@ -37,6 +38,11 @@ table{
 }
 a{
     text-decoration: none;
+}
+div img#PhotoHeader{
+	align-items: stretch;
+	height: 50%;
+	position:static;
 }
 img{
     height: 100px;
