@@ -18,6 +18,18 @@ h2{
 	list-style-type: none;
 	font-family: inherit;
 }
+#About-LeftColumn{
+	width: 100px;
+	height: 1000px;
+	background-color:grey;
+}
+#About-RightColumn{
+	background-color:grey;
+	position: relative;
+}
+.About-Columns{
+	display: inline-block;
+}
 body{
 	margin:0px;
 }
