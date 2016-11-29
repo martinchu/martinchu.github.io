@@ -19,8 +19,7 @@ h2{
 	font-family: inherit;
 }
 body{
-	margin: 70px;
-	background-color: #f9fafc;
+	margin:0px;
 }
 ul ul li{
 	font-family: Tahoma;
@@ -46,7 +45,7 @@ a{
 	position:static;
 }
 #Global-Margin{
-	margin: 10px 100px 10px 100px;
+	margin: 10px 125px 10px 125px;
 	padding: 10px;
 }
 #Global-Content{
@@ -57,7 +56,9 @@ a{
 	height: 100px;
 	width: 100px;
 	border-radius:100%;
-	border: 2px solid black;
+	border: 5px solid grey;
+	text-align: center;
+	text-align-last: center;
 }
 img{
     height: 100px;
