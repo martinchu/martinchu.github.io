@@ -25,29 +25,35 @@ body{
 ul ul li{
 	font-family: Tahoma;
 }
-p {
+p{
 	font-family: Verdana;
 	font-size: 16px;
-{
+}
 td{
     height: 50px;
     border: 1px dashed black;
-    }
-table{
-    border: 1px solid black;
 }
+/*table{
+    border: 1px solid black;
+}*/
 a{
     text-decoration: none;
 }
-div img#PhotoHeader{
+#PhotoHeader{
 	align-items: stretch;
-	height: 50%;
+	height: 100%;
+	width: 100%;
 	position:static;
 }
-
-#PhotoBadge{
-	display: inline-block;
-	margin-left: 5px;
+#Global-Margin{
+	margin: 10px 100px 10px 100px;
+	padding: 10px;
+}
+#Global-Content{
+	background-color: grey;
+}
+.Circle {
+	display: block;
 	height: 100px;
 	width: 100px;
 	border-radius:100%;
@@ -57,7 +63,7 @@ img{
     height: 100px;
     width: 100px;
 }
-div{
+/*div{
     height: 50px;
     width: 120px;
     border-style: solid;
@@ -66,4 +72,4 @@ div{
     margin: auto;
     text-align: center;
     font-family: Tahoma;
-}
+}*/
