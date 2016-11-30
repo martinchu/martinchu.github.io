@@ -27,6 +27,7 @@ h2{
 #About-RightColumn{
 	background-color:grey;
 	position: absolute;
+	display: inline-block;
 }
 .About-Columns{
 	display: inline-block;
