@@ -22,10 +22,11 @@ h2{
 	width: 100px;
 	height: 1000px;
 	background-color:grey;
+	display:inline-block;
 }
 #About-RightColumn{
 	background-color:grey;
-	position: relative;
+	position: absolute;
 }
 .About-Columns{
 	display: inline-block;
@@ -65,8 +66,8 @@ a{
 }
 .Circle {
 	display: block;
-	height: 100px;
-	width: 100px;
+	height: 90px;
+	width: 90px;
 	border-radius:100%;
 	border: 5px solid grey;
 	text-align: center;
