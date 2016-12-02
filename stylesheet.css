@@ -23,11 +23,13 @@ h2{
 	height: 1000px;
 	background-color:grey;
 	display:inline-block;
+	float: left;
 }
 #About-RightColumn{
 	background-color:grey;
 	position: absolute;
 	display: inline-block;
+	float: right;
 }
 .About-Columns{
 	display: inline-block;
