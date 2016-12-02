@@ -21,14 +21,14 @@ h2{
 #About-LeftColumn{
 	width: 100px;
 	height: 1000px;
-	background-color:grey;
-	display:inline-block;
+	background-color:#c3ccdb;
+	/*display:inline-block;*/
 	float: left;
 }
 #About-RightColumn{
 	background-color:grey;
 	position: absolute;
-	display: inline-block;
+	/*display: inline-block;*/
 	float: right;
 }
 .About-Columns{
