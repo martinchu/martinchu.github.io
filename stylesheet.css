@@ -79,6 +79,7 @@ a{
 img{
     height: 100px;
     width: 100px;
+		max-width: 100%;
 }
 /*div{
     height: 50px;
