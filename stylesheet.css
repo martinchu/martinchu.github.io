@@ -1,6 +1,13 @@
 *{
 	font-family: Helvetica Neue;
 }
+#GlobalHeader{
+	background-color: black;
+	
+}
+#logoM{
+	align-content: center;
+}
 a:hover{
 	text-decoration: none;
 	color: grey;
