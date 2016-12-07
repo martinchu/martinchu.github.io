@@ -3,10 +3,12 @@
 }
 #GlobalHeader{
 	background-color: black;
-	
+
 }
-#logoM{
-	align-content: center;
+#LogoM{
+	padding-left: 10px;
+
+	/*align-content: center;*/
 }
 a:hover{
 	text-decoration: none;
@@ -69,6 +71,7 @@ a{
 	position:static;
 }
 #PhotoHeader:hover{
+	background-image: filter(url(https://c8.staticflickr.com/6/5607/31485000135_f6961c81e0_m.jpg),blur(20px));
 	opacity: 0.7;
 }
 #Global-Margin{
@@ -91,6 +94,11 @@ img{
     height: 100px;
     width: 100px;
 		max-width: 100%;
+		-webkit-user-drag: none;
+	   -khtml-user-drag: none;
+	   -moz-user-drag: none;
+	   -o-user-drag: none;
+	   user-drag: none;
 }
 /*div{
     height: 50px;
