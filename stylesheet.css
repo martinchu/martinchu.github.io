@@ -3,12 +3,36 @@
 }
 #GlobalHeader{
 	background-color: black;
-
+	/*position: fixed;*/
+	width: 100%;
+	top: 0;
+	position: fixed;
 }
 #LogoM{
 	padding-left: 10px;
-
+	float: left;
 	/*align-content: center;*/
+}
+.Container{
+	width:1100px;
+	margin: 0 auto;
+}
+.NavBar{
+	float: right;
+}
+.NavBar ul li{
+	color: white;
+	float: left;
+	list-style-type: none;
+	margin-left: 20px;
+	padding-top: 13px;
+	font-size: 25px;
+}
+.NavBar ul li a{
+	font-family: Verdana;
+}
+a{
+	color: inherit;
 }
 a:hover{
 	text-decoration: none;
@@ -71,15 +95,14 @@ a{
 	position:static;
 }
 #PhotoHeader:hover{
-	background-image: filter(url(https://c8.staticflickr.com/6/5607/31485000135_f6961c81e0_m.jpg),blur(20px));
-	opacity: 0.7;
+
 }
 #Global-Margin{
-	margin: 10px 125px 10px 125px;
-	padding: 10px;
+	/*margin: 10px 125px 10px 125px;
+	padding: 10px;*/
 }
 #Global-Content{
-	background-color: grey;
+
 }
 .Circle {
 	display: block;
@@ -89,6 +112,15 @@ a{
 	border: 5px solid grey;
 	text-align: center;
 	text-align-last: center;
+}
+.GlobalHeaderButtons{
+	height: inherit;
+	width: 50px;
+	display: inline-block;
+	text-align-last: right;
+	color: white;
+	font-family: Verdana;
+	font-size: 20px;
 }
 img{
     height: 100px;
