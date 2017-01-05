@@ -9,18 +9,19 @@
 	top: 0;
 	position: fixed;
 	display: block;
+	max-height: 100%;
 }
 LogoM{
 	/*padding-left: 10px;*/
 	float: left;
 	/*min-height: inherit;*/
-	max-height: inherit;
+	height: inherit;
 	/*align-content: center;*/
 }
 .Container{
 	width:1100px;
 	margin: 0 auto;
-	min-height: inherit;
+	max-height: inherit;
 }
 .NavBar{
 	float: right;
@@ -134,10 +135,10 @@ img{
     width: 100px;
 		max-width: 100%;
 		-webkit-user-drag: none;
-	   -khtml-user-drag: none;
-	   -moz-user-drag: none;
-	   -o-user-drag: none;
-	   user-drag: none;
+	  -khtml-user-drag: none;
+	  -moz-user-drag: none;
+	  -o-user-drag: none;
+	  user-drag: none;
 }
 @keyframes PhotoHeaderFadeIn {
 	from{
