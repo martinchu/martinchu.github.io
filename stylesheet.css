@@ -15,7 +15,8 @@ LogoM{
 	/*padding-left: 10px;*/
 	float: left;
 	/*min-height: inherit;*/
-	height: inherit;
+	height: 50px;
+	width: 50px;
 	/*align-content: center;*/
 }
 .Container{
