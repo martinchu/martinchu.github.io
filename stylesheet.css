@@ -1,47 +1,76 @@
-*{
+/**{
 	font-family: Helvetica Neue;
-}
-#GlobalHeader{
+}*/
+#GlobalHeader {
 	background-color: black;
-	/*position: fixed;*/
 	width: 100%;
 	height: 50px;
+	max-width: 100%;
+	max-height: 50px;
 	top: 0;
-	position: fixed;
+	position: static;
 	display: block;
-	max-height: 100%;
 }
-LogoM{
-	/*padding-left: 10px;*/
+.LogoM {
+	padding-left: 10px;
 	float: left;
-	/*min-height: inherit;*/
-	height: 50px;
-	width: 50px;
+	/*max-width: inherit;*/
+	max-height: 100%;
+	max-height: 100%;
+	transform: scale(0.18,0.18);
+	margin-top: -160px;
+	/*width: 100%;*/
 	/*align-content: center;*/
 }
-.Container{
+.Container {
 	width:1100px;
 	margin: 0 auto;
-	max-height: inherit;
+	max-height: 100%;
+	max-width: inherit;
+	display: inline-block;
 }
-.NavBar{
+.NavBar {
 	float: right;
 }
-.NavBar ul li{
+
+.InstagramPost{
+	/*width:*/
+
+}
+script{
+	/*display: */
+	display: block;
+}
+
+.NavBar ul li {
 	color: white;
 	float: left;
 	list-style-type: none;
 	margin-left: 20px;
-	padding-top: 13px;
-	font-size: 25px;
+	padding-top: 0;
+	display: block;
 }
-.NavBar ul li a{
+
+.NavBar ul li div:hover {
+	color: red;
+}
+.NavBarItem {
+	height:100%;
+	-moz-user-select: none;
+	-webkit-user-select: none;
+	-ms-user-select:none;
+	user-select: none;
+	font-size: 20px;
 	font-family: Verdana;
 }
-a{
+a {
 	color: inherit;
+	max-width: 100%;
+	max-height: 100%;
+	text-decoration: none;
+	font-family: inherit;
 }
-a:hover{
+a:hover {
 	text-decoration: none;
 	color: grey;
 }
@@ -75,7 +104,7 @@ h2{
 	display: inline-block;
 }
 body{
-	margin:0px;
+	margin: 0;
 }
 ul ul li{
 	font-family: Tahoma;
@@ -88,12 +117,7 @@ td{
     height: 50px;
     border: 1px dashed black;
 }
-/*table{
-    border: 1px solid black;
-}*/
-a{
-    text-decoration: none;
-}
+
 #PhotoHeader{
 	animation-name: PhotoHeaderFadeIn;
 	animation-duration: 5s;
@@ -102,14 +126,12 @@ a{
 	width: 100%;
 	max-width: 100%;
 	position:static;
+	padding-top: 100px;
 }
 #PhotoHeader:hover{
 
 }
-#Global-Margin{
-	/*margin: 10px 125px 10px 125px;
-	padding: 10px;*/
-}
+
 #Global-Content{
 	/*display: inline-block;*/
 }
@@ -122,7 +144,7 @@ a{
 	text-align: center;
 	text-align-last: center;
 }
-.GlobalHeaderButtons{
+.GlobalHeaderButtons {
 	height: inherit;
 	width: 50px;
 	display: inline-block;
@@ -131,15 +153,13 @@ a{
 	font-family: Verdana;
 	font-size: 20px;
 }
-img{
-    height: 100px;
-    width: 100px;
-		max-width: 100%;
+img {
 		-webkit-user-drag: none;
 	  -khtml-user-drag: none;
 	  -moz-user-drag: none;
 	  -o-user-drag: none;
 	  user-drag: none;
+		max-width: 100%;
 }
 @keyframes PhotoHeaderFadeIn {
 	from{
