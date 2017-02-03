@@ -11,8 +11,13 @@
 	position: static;
 	display: block;
 }
+<<<<<<< HEAD
 .LogoM {
 	padding-left: 10px;
+=======
+.LogoM{
+	/*padding-left: 10px;*/
+>>>>>>> origin/master
 	float: left;
 	/*max-width: inherit;*/
 	max-height: 100%;
