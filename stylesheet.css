@@ -58,7 +58,9 @@ script{
 }
 .FooterButton img{
 	display: inline-block;
-	align-self:
+	height: 100px;
+	width: 100px;
+
 }
 .NavBarItem {
 	height:100%;
@@ -128,11 +130,11 @@ td{
 	animation-name: PhotoHeaderFadeIn;
 	animation-duration: 5s;
 	align-items: stretch;
-	height: 100%;
+	height: auto;
 	width: 100%;
 	max-width: 100%;
 	position:static;
-	padding-top: 100px;
+	/*padding-top: 100px;*/
 }
 #PhotoHeader:hover{
 
@@ -175,3 +177,8 @@ img {
 		opacity: 1;
 	}
 }
+/*@media only screen and (min-width: 400px) {
+    body {
+        background-image: url('img_flowers.jpg');
+    }
+}*/
