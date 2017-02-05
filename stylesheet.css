@@ -12,7 +12,7 @@
 	display: block;
 }
 #GlobalFooter{
-	background-color: #ffff00;
+	background-color: #193460;
 	display: block;
 	padding-top: 100px;
 	padding-bottom: 200px;
@@ -86,9 +86,20 @@ img:after {
   height: 100%;
   background-color: #fff;
 }
-p.ProjectIntro::first-letter {
-    color: grey;
-    font-size: xx-large;
+p.Paragraph{
+	color: grey;
+	/*font-family: 'HKGroteskRegular', Verdana;*/
+	font-family: 'Roboto', sans-serif;
+	font-weight: normal;
+	font-style: normal;
+}
+p.Intro::first-letter {
+    color: black;
+    font-size: 50px;
+		/*font-family: 'HKGroteskRegular', Verdana;*/
+		font-family: 'Roboto', sans-serif;
+   	font-weight: bold;
+    font-style: normal;
 }
 .Footnote{
 	display: block;
@@ -167,7 +178,7 @@ ul ul li{
 }
 p{
 	font-family: Verdana;
-	font-size: 16px;
+	font-size: 18px;
 }
 td{
     height: 50px;
