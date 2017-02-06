@@ -12,7 +12,6 @@ font-family: Helvetica Neue;
 	display: block;
 }
 @media screen and (min-width: 1000px){
-
 	.NameOnTheWall{
 		padding: 80px 0 130px 0;
 		letter-spacing: 1px;
@@ -137,6 +136,7 @@ p.Intro::first-letter {
 	text-align: center;
 }
 #Tagline p{
+
 	color: grey;
 	font-size: 18px;
 	font-family: 'Open Sans', sans-serif;
@@ -193,13 +193,7 @@ h2{
 body{
 	margin: 0;
 }
-ul ul li{
-	font-family: Tahoma;
-}
-p{
-	font-family: Verdana;
-	font-size: 18px;
-}
+
 td{
 	height: 50px;
 	border: 1px dashed black;
