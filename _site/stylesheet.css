@@ -134,8 +134,12 @@ p.Intro::first-letter {
 	width: 100px;
 }
 #Tagline{
+	text-align: center;
+}
+#Tagline p{
 	color: grey;
-	font-size: 12px;
+	font-size: 18px;
+	font-family: 'Open Sans', sans-serif;
 }
 .NavBarItem {
 	height:100%;
