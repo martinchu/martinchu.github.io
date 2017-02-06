@@ -1,5 +1,5 @@
 /**{
-	font-family: Helvetica Neue;
+font-family: Helvetica Neue;
 }*/
 #GlobalHeader {
 	background-color: black;
@@ -13,10 +13,10 @@
 }
 @media screen and (min-width: 1000px){
 
-.NameOnTheWall{
-	padding: 80px 0 130px 0;
-	letter-spacing: 1px;
-}
+	.NameOnTheWall{
+		padding: 80px 0 130px 0;
+		letter-spacing: 1px;
+	}
 }
 .NameOnTheWall h2{
 	text-align: center;
@@ -64,6 +64,7 @@ script{
 	margin-left: 20px;
 	padding-top: 0;
 	display: block;
+	font-family: 'Roboto', sans-serif;
 }
 .ThumbnailList{
 	display: block;
@@ -82,20 +83,20 @@ script{
 	display: block;
 }
 img:after {
-  content: "\f1c5" " " attr(alt);
+	content: "\f1c5" " " attr(alt);
 
-  font-size: 16px;
-  font-family: FontAwesome;
-  color: rgb(100, 100, 100);
+	font-size: 16px;
+	font-family: FontAwesome;
+	color: rgb(100, 100, 100);
 
-  display: block;
-  position: absolute;
-  z-index: 2;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: #fff;
+	display: block;
+	position: absolute;
+	z-index: 2;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: #fff;
 }
 p.Paragraph{
 	color: grey;
@@ -105,12 +106,12 @@ p.Paragraph{
 	font-style: normal;
 }
 p.Intro::first-letter {
-    color: black;
-    font-size: 50px;
-		/*font-family: 'HKGroteskRegular', Verdana;*/
-		font-family: 'Roboto', sans-serif;
-   	font-weight: bold;
-    font-style: normal;
+	color: black;
+	font-size: 50px;
+	/*font-family: 'HKGroteskRegular', Verdana;*/
+	font-family: 'Roboto', sans-serif;
+	font-weight: bold;
+	font-style: normal;
 }
 .Footnote{
 	display: block;
@@ -193,8 +194,8 @@ p{
 	font-size: 18px;
 }
 td{
-    height: 50px;
-    border: 1px dashed black;
+	height: 50px;
+	border: 1px dashed black;
 }
 
 #PhotoHeader{
@@ -233,12 +234,12 @@ td{
 	font-size: 20px;
 }
 img {
-		-webkit-user-drag: none;
-	  -khtml-user-drag: none;
-	  -moz-user-drag: none;
-	  -o-user-drag: none;
-	  user-drag: none;
-		max-width: 100%;
+	-webkit-user-drag: none;
+	-khtml-user-drag: none;
+	-moz-user-drag: none;
+	-o-user-drag: none;
+	user-drag: none;
+	max-width: 100%;
 }
 @keyframes PhotoHeaderFadeIn {
 	from{
@@ -249,7 +250,7 @@ img {
 	}
 }
 /*@media only screen and (min-width: 400px) {
-    body {
-        background-image: url('img_flowers.jpg');
-    }
+body {
+background-image: url('img_flowers.jpg');
+}
 }*/
