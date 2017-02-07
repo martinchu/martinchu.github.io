@@ -93,6 +93,18 @@ img:after {
 	width: 100%;
 	height: 100%;
 }
+#ImageDescription{
+	text-align: center;
+	vertical-align: middle;
+	font-size: 24px;
+	font-family: 'Roboto', sans-serif;
+	visibility: hidden;
+}
+#ImageWrap:hover #ImageDescription {
+  visibility: visible;
+  opacity: 1;
+}
+
 p.Paragraph{
 	color: grey;
 	/*font-family: 'HKGroteskRegular', Verdana;*/
