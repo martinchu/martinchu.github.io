@@ -12,5 +12,4 @@ Structure:
 
 --FindMe.html: Adding personal social network link to
 
---AboutMe.html: Personal Resume
-
+--About.html: Personal Resume
