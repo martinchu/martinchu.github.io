@@ -11,7 +11,6 @@ font-family: Helvetica Neue;
 	position: static;
 	display: block;
 }
-
 .NameOnTheWall h2{
 	text-align: center;
 	font-family: 'Roboto', sans-serif;
@@ -60,6 +59,7 @@ script{
 	margin-left: 20px;
 	padding-top: 0;
 	display: block;
+	font-family: 'Roboto', sans-serif;
 }
 .ThumbnailList{
 	display: block;
@@ -131,7 +131,15 @@ p.Intro::first-letter {
 	display: inline-block;
 	height: auto;
 	width: 100%;
-
+}
+#Tagline{
+	text-align: center;
+}
+#Tagline p{
+	color: grey;
+	font-size: 18px;
+	font-family: 'Open Sans', sans-serif;
+	>>>>>>> origin/master
 }
 .NavBarItem {
 	height:100%;
@@ -140,14 +148,14 @@ p.Intro::first-letter {
 	-ms-user-select:none;
 	user-select: none;
 	font-size: 20px;
-	font-family: Verdana;
+	font-family: 'Roboto', sans-serif;;
 }
-a {
+a{
 	color: inherit;
 	max-width: 100%;
 	max-height: 100%;
 	text-decoration: none;
-	font-family: inherit;
+	/*font-family: inherit;*/
 }
 a:hover {
 	text-decoration: none;
@@ -183,13 +191,7 @@ h2{
 body{
 	margin: 0;
 }
-ul ul li{
-	font-family: Tahoma;
-}
-p{
-	font-family: Verdana;
-	font-size: 18px;
-}
+
 td{
 	height: 50px;
 	border: 1px dashed black;
@@ -258,8 +260,12 @@ img {
 		max-width: 100%;
 		display: block;
 	}
-	.ThumbnailList ul li {
-		width: 100px;
+	.ThumbnailList ul li{
+		width: 25%;
 		height: auto;
+	}
+	.ThumbnailList ul{
+		width: 50%;
+		padding: 0 25%;
 	}
 }
