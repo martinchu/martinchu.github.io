@@ -45,7 +45,7 @@ font-family: Helvetica Neue;
 
 .InstagramPost{
 	/*width:*/
-
+	display: inline-block;
 }
 script{
 	/*display: */
@@ -148,7 +148,6 @@ p.Intro::first-letter {
 	color: grey;
 	font-size: 18px;
 	font-family: 'Open Sans', sans-serif;
-	>>>>>>> origin/master
 }
 .NavBarItem {
 	height:100%;
@@ -196,6 +195,10 @@ h2{
 }
 .About-Columns{
 	display: inline-block;
+}
+.Column4{
+	width:25%;
+	height:auto;
 }
 body{
 	margin: 0;
