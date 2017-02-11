@@ -15,10 +15,13 @@ font-family: Helvetica Neue;
 	text-align: center;
 	font-family: 'Roboto', sans-serif;
 }
+.FeedSubsection h2{
+	text-align: center;
+	font-family: 'Roboto', sans-serif;
+}
 #GlobalFooter{
 	/*background-color: #091323;*/
 	background-color: #d1d1d1;
-
 	display: block;
 	padding-top: 100px;
 	padding-bottom: 200px;
