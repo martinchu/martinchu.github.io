@@ -1,6 +1,6 @@
-/**{
-font-family: Helvetica Neue;
-}*/
+p{
+	font-family: "Roboto", sans-serif;
+}
 #GlobalHeader {
 	background-color: black;
 	width: 100%;
@@ -10,6 +10,19 @@ font-family: Helvetica Neue;
 	top: 0;
 	position: static;
 	display: block;
+}
+div .Columns{
+	display: inline-block;
+	vertical-align: top;
+}
+div .Column13{
+	width: 33%;
+	height: auto;
+}
+div .Column23{
+	display: inline-block;
+	width: 67%;
+	height: auto;
 }
 .NameOnTheWall h2{
 	text-align: center;
@@ -104,8 +117,8 @@ img:after {
 	visibility: hidden;
 }
 #ImageWrap:hover #ImageDescription {
-  visibility: visible;
-  opacity: 1;
+	visibility: visible;
+	opacity: 1;
 }
 
 p.Paragraph{
