@@ -57,6 +57,7 @@ div .Column23{
 }
 .NavBar {
 	float: right;
+	visibility: collapse;
 }
 
 .InstagramPost{
@@ -111,12 +112,17 @@ img:after {
 }
 #ImageDescription{
 	text-align: center;
-	vertical-align: middle;
-	font-size: 24px;
+	font-size: 40px;
 	font-family: 'Roboto', sans-serif;
 	visibility: hidden;
+	position: absolute;
+	bottom: 20%;
+	font-weight: bold;
+	letter-spacing: 1px;
+	width: 100%;
 }
-#ImageWrap:hover #ImageDescription {
+
+#ImageWrap:hover #ImageDescription span {
 	visibility: visible;
 	opacity: 1;
 }
@@ -142,7 +148,7 @@ p.Intro::first-letter {
 	padding: 100px 0 0 0;
 }
 .Footnote p{
-	font-size: 16px;
+	font-size: 16	px;
 	color: white;
 	font-family: 'Roboto', sans-serif;
 }
@@ -172,7 +178,7 @@ p.Intro::first-letter {
 	-ms-user-select:none;
 	user-select: none;
 	font-size: 20px;
-	font-family: 'Roboto', sans-serif;;
+	font-family: 'Roboto', sans-serif;
 }
 a{
 	color: inherit;
@@ -229,19 +235,22 @@ td{
 	height: 50px;
 	border: 1px dashed black;
 }
-
-#PhotoHeader{
+#ImageWrap{
 	animation-name: PhotoHeaderFadeIn;
 	animation-duration: 5s;
+}
+
+#PhotoHeader{
 	align-items: stretch;
 	height: auto;
 	width: 100%;
 	max-width: 100%;
 	position:static;
 	/*padding-top: 100px;*/
+
 }
 #PhotoHeader:hover{
-
+	opacity: 0.5;
 }
 
 #Global-Content{
@@ -300,5 +309,8 @@ img {
 	.ThumbnailList ul{
 		width: 35%;
 		padding: 0 32.5%;
+	}
+	.NavBar{
+		visibility: visible;
 	}
 }
