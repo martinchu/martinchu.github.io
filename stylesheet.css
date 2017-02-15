@@ -120,6 +120,7 @@ img:after {
 	font-weight: bold;
 	letter-spacing: 1px;
 	width: 100%;
+	height: 100%;
 }
 
 #ImageWrap:hover #ImageDescription span {
@@ -238,12 +239,16 @@ td{
 #ImageWrap{
 	animation-name: PhotoHeaderFadeIn;
 	animation-duration: 5s;
+	/*background-image: url(martin-18.jpg);*/
+	width: 100%;
+	height: auto;
 }
 
 #PhotoHeader{
 	align-items: stretch;
 	height: auto;
 	width: 100%;
+	/*visibility: hidden;*/
 	max-width: 100%;
 	position:static;
 	/*padding-top: 100px;*/
