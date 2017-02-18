@@ -5,3 +5,7 @@ function myFunction() {
 function reponSquare(){
   // document.getElementByClassName("WallPhoto")
 }
+document.getElementById("HTMLBody").onload = function(){beforeLoad()};
+function beforeLoad(){
+
+}
