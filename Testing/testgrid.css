@@ -1,12 +1,24 @@
 #photo1{
   background: url(https://scontent.cdninstagram.com/t51.2885-15/e35/16230458_168394810319730_8836914199570415616_n.jpg?ig_cache_key=MTQ0MzcyNTE2NjI3MzI3Nzc2MA%3D%3D.2);
-  
-
 }
 .grid{
-  width: 25%;
-  display: inline-block;
+  background-color: black;
+  background-repeat:no-repeat;
+  background-size: cover;
+  background-position: center;
+  font-size: 0;
 }
-.grid::after{
-  padding-bottom: 100%;
+
+.gridV2{
+  /*border: 1px solid red;*/
+  width: 12.5%;
+  padding: 12.5%;
+  box-sizing: border-box;
+  position: relative;
+  color: grey;
+  background-color: grey;
+  display: inline-block;
+  font-size: 0;
+  background-size: cover;
+  overflow: hidden;
 }
