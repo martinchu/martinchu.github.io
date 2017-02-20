@@ -39,6 +39,10 @@ function responSquare(){
 
       }
     }
+    else{
+      childimg.style.width = newwidth + 'px';
+      childimg.style.height = imgheight + 'px';
+    }
     // document.getElementsByClassName("grid")[i].setAttribute("style","width:" + text);
     // document.getElementsByClassName("grid")[i].setAttribute("style","height:"+ text);
   }
