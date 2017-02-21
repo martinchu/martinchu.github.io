@@ -237,14 +237,15 @@ td{
 	border: 1px dashed black;
 }
 #ImageWrap{
-	animation-name: PhotoHeaderFadeIn;
-	animation-duration: 5s;
+	/*animation-name: PhotoHeaderFadeIn;
+	animation-duration: 5s;*/
 	/*background-image: url(martin-18.jpg);*/
 	width: 100%;
 	height: auto;
 }
 
 #PhotoHeader{
+	background: url(Optimized-martin-18.jpg);
 	align-items: stretch;
 	height: auto;
 	width: 100%;
@@ -312,8 +313,8 @@ img {
 		height: auto;
 	}
 	.ThumbnailList ul{
-		width: 35%;
-		padding: 0 32.5%;
+		width: 30%;
+		padding: 0 35%;
 	}
 	.NavBar{
 		visibility: visible;

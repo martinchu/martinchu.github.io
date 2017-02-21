@@ -1,19 +1,62 @@
+
+.sqfourhundredpx
+{
+  width = 400px;
+  height = 400px;
+}
+.sqfourhundredpx img
+{
+  width = 100%;
+}
+
+/*
 #photo1{
-  /*background: url(https://scontent.cdninstagram.com/t51.2885-15/e35/16230458_168394810319730_8836914199570415616_n.jpg?ig_cache_key=MTQ0MzcyNTE2NjI3MzI3Nzc2MA%3D%3D.2);*/
 }
 .grid{
-  background-color: black;
-  background-repeat:no-repeat;
-  background-size: cover;
-  background-position: center;
-  font-size: 0;
+background-color: black;
+background-repeat:no-repeat;
+background-size: cover;
+background-position: center;
+font-size: 0;
 }
 
 .gridV2{
-  box-sizing: border-box;
-  position: relative;
-  display: inline-block;
-  font-size: 0;
-  background-size: cover;
-  overflow: hidden;
+box-sizing: border-box;
+position: relative;
+display: inline-block;
+font-size: 0;
+background-size: cover;
+overflow: hidden;
 }
+#preload1{
+background-repeat: no-repeat;
+}*/
+
+
+
+
+
+
+
+/*PRELOADING IMAGES, for future reference*/
+
+/*
+
+div#wrap {
+background: url(martin-18.jpg) no-repeat -9999px -9999px;
+}
+div#jump {
+background: url(martin-18.jpg) no-repeat -9999px -9999px;
+}
+div#header {
+background: url(martin-18.jpg) no-repeat -9999px -9999px;
+}
+
+div#preloaded-images {
+position: absolute;
+overflow: hidden;
+left: -9999px;
+top: -9999px;
+height: 1px;
+width: 1px;
+}*/
