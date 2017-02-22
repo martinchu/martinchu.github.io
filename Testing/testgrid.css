@@ -1,1 +1,4 @@
-.sqfourhundredpx{width = 400px;height = 400px;}
+.sqfourhundredpx{
+  width: 25%;
+  height: auto;
+}
