@@ -1,4 +1,7 @@
 .sqfourhundredpx{
-  width: 25%;
-  height: auto;
+  width: 400px;
+  height: 400px;
+}
+.sqfourhundredpx img{
+  height: 100%;
 }
