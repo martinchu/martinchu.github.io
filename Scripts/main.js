@@ -1,3 +1,29 @@
+function myMap() {
+  var mapProp= {
+    center:new google.maps.LatLng(51.508742,-0.120850),
+    zoom:3,
+  };
+  var map=new google.maps.Map(document.getElementById("GoogleMap"),mapProp);
+  var myCenter = new google.maps.LatLng(51.508742,-0.120850);
+  var image = {
+    url:'logo-black-small.png',
+    size: new google.maps.Size(50, 50),
+    origin: new google.maps.Point(0, 0)
+  }
+  var marker = new google.maps.Marker({
+    position: myCenter
+    // animation:google.maps.Animation.BOUNCE,
+    // icon: image
+  });
+  marker.setMap(map);
+  var currentLocation = new google.maps.InfoWindow({
+    content: "My Current Location"
+  });
+  currentLocation.open(map,marker);
+}
+
+
+
 function responSquare(){
   // document.getElementByClassName("WallPhoto")
   var cn = "gridV2";
