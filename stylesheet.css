@@ -15,13 +15,12 @@ div .Columns{
 	display: inline-block;
 	vertical-align: top;
 }
-div .Column13{
+div .Col13{
 	width: 33%;
 	height: auto;
 }
-div .Column23{
-	display: inline-block;
-	width: 67%;
+div .Col23{
+	width: 66%;
 	height: auto;
 }
 #ProfilePicture{
@@ -30,13 +29,13 @@ div .Column23{
 	text-align: center;
 	margin: 0 auto;
 	border-radius: 50%;
-	border: 3px solid white;
+	border: 4px solid white;
 	position: absolute;
 	left: 0;
 	right: 0;
-	top: 470px;
+	top: 170px;
 }
-#TBC{
+.TBC{
 	padding: 250px 0 250px 0;
 	text-align: center;
 }
@@ -44,15 +43,15 @@ div .Column23{
 	border-radius: 50%;
 }
 .bkgd{
-    background: rgb(54, 25, 25);
-    background: rgba(54, 25, 25, .5);
-		background-repeat: no-repeat;
+	background: rgb(54, 25, 25);
+	background: rgba(54, 25, 25, .5);
+	background-repeat: no-repeat;
 }
 #AboutBackground{
 	position: relative;
 	background: url("P1330011.JPG");
 	width: 100%;
-	height: 550px;
+	height: 250px;
 	background-size: cover;
 	background-size: center center;
 }
@@ -67,12 +66,32 @@ div .Column23{
 #AboutContent{
 	margin-top: 50px;
 	padding-top: 50px;
+
 }
 
 #AboutContent h2{
 	font-size: 30px;
 	text-align: center;
 	font-family: 'Roboto', sans-serif;
+	padding-top: 20px;
+}
+
+#AboutContent p{
+	-webkit-touch-callout: none; /* iOS Safari */
+	-webkit-user-select: none; /* Safari */
+	-khtml-user-select: none; /* Konqueror HTML */
+	-moz-user-select: none; /* Firefox */
+	-ms-user-select: none; /* Internet Explorer/Edge */
+	user-select: none; /* Non-prefixed version, currently
+	supported by Chrome and Opera */
+}
+
+#AboutContent .Columns h3{
+	font-family: sans-serif;
+	font-size: 20px;
+	font-style: italic;
+	letter-spacing: 0.7px;
+	color: grey;
 }
 
 #GlobalFooter{
@@ -83,13 +102,15 @@ div .Column23{
 	padding-bottom: 200px;
 }
 #LogoM img{
-	padding-left: 30px;
+	padding-left: 5%;
 	float: left;
 	/*max-width: inherit;*/
 	/*max-height: 100%;*/
 	/*max-width: 100%;*/
 	height: 50px;
 	width: 50px;
+	/*new width & height: 75px;*/
+	/*new margin-top: -11px;*/
 }
 .Container {
 	width:100%;
@@ -97,10 +118,12 @@ div .Column23{
 	max-height: 100%;
 	max-width: 100%;
 	display: block;
+	height: 100%;
 }
 .NavBar {
 	float: right;
-	visibility: collapse;
+	/*visibility: collapse;*/
+	display: none;
 }
 
 .InstagramPost{
@@ -129,9 +152,9 @@ script{
 }
 .ThumbnailList ul{
 	display: inline-block;
-	width:100%;
+	width:65%;
 	padding: 0 0 0 0;
-	margin: 0 0 0 0;
+	margin: 0 auto;
 }
 .ThumbnailList ul li {
 	color: white;
@@ -246,22 +269,7 @@ h2{
 	list-style-type: none;
 	font-family: inherit;
 }
-#About-LeftColumn{
-	width: 100px;
-	height: 1000px;
-	background-color:#c3ccdb;
-	/*display:inline-block;*/
-	float: left;
-}
-#About-RightColumn{
-	background-color:grey;
-	position: absolute;
-	/*display: inline-block;*/
-	float: right;
-}
-.About-Columns{
-	display: inline-block;
-}
+
 #PhotoWall{
 	background-color: black;
 }
@@ -289,6 +297,8 @@ td{
 
 #PhotoHeader{
 	background: url(Optimized-martin-18.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
 	align-items: stretch;
 	height: auto;
 	width: 100%;
@@ -340,6 +350,19 @@ img {
 	}
 }
 @media screen and (min-width: 750px){
+	#AboutBackground{
+		height:550px;
+	}
+	#ProfilePicture{
+		top: 470px;
+	}
+	#LogoM img{
+		padding-left: 30px;
+	}
+	.NavBar {
+		display: block;
+	}
+
 	.NameOnTheWall{
 		padding: 80px 0 130px 0;
 		letter-spacing: 1px;
