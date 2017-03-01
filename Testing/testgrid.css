@@ -22,6 +22,21 @@ body{
   width: inherit;
   object-fit: cover;
 }
+#AboutTitle{
+  position: absolute;
+  top: 50%;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+}
+#AboutTitle p{
+  font-family: 'Roboto',sans-serif;
+  color: white;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 60px;
+  letter-spacing: 2px;
+}
 
 @keyframes ImageFadeIn {
   from{
