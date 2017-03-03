@@ -24,20 +24,21 @@ body{
 }
 #AboutTitle{
   position: absolute;
-  top: 50%;
-  margin: 0 auto;
+  overflow:hidden;
+  margin: auto auto;
   left: 0;
   right: 0;
-}
-#AboutTitle p{
-  font-family: 'Roboto',sans-serif;
-  color: white;
-  margin: 0 auto;
-  text-align: center;
-  font-size: 60px;
-  letter-spacing: 2px;
+  top:0;
 }
 
+#AboutTitle p{
+  font-family: 'Bebas Regular',sans-serif;
+  color: white;
+  text-align: center;
+  font-size: 130px;
+  margin: 0;
+  padding-top: 14px;
+}
 @keyframes ImageFadeIn {
   from{
     opacity: 0;
