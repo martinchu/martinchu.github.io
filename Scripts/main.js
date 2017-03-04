@@ -26,7 +26,7 @@ function myMap() {
 
 function responSquare(){
   // document.getElementByClassName("WallPhoto")
-  var cn = "gridV2";
+  var cn = "grid";
   var col = 4;
   var w = window.innerWidth;
   var h = window.innerHeight;
