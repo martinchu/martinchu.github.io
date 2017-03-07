@@ -13,6 +13,7 @@ body{
   font-size: 0;
   background-size: cover;
   overflow: hidden;
+  visibility: hidden;
 }
 
 .grid img{
@@ -22,23 +23,7 @@ body{
   width: inherit;
   object-fit: cover;
 }
-#AboutTitle{
-  position: absolute;
-  overflow:hidden;
-  margin: auto auto;
-  left: 0;
-  right: 0;
-  top:0;
-}
 
-#AboutTitle p{
-  font-family: 'Bebas Regular',sans-serif;
-  color: white;
-  text-align: center;
-  font-size: 130px;
-  margin: 0;
-  padding-top: 14px;
-}
 @keyframes ImageFadeIn {
   from{
     opacity: 0;
