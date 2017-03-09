@@ -1,3 +1,19 @@
+h2,h3,p{
+	-webkit-touch-callout: none; /* iOS Safari */
+	-webkit-user-select: none; /* Safari */
+	-khtml-user-select: none; /* Konqueror HTML */
+	-moz-user-select: none; /* Firefox */
+	-ms-user-select: none; /* Internet Explorer/Edge */
+	user-select: none; /* Non-prefixed version, currently
+	supported by Chrome and Opera */
+	font-family: 'Bebas Regular';
+	font-size: 20px;
+	letter-spacing: 1.2px;
+}
+#indexProjects,#indexPosts{
+	padding-top: 30px;
+	padding-bottom: 20px;
+}
 AboutMCp{
 	font-family: "Roboto", sans-serif;
 }
@@ -118,15 +134,6 @@ div .Columns{
 	padding-top: 20px;
 }
 
-h2,h3,p{
-	-webkit-touch-callout: none; /* iOS Safari */
-	-webkit-user-select: none; /* Safari */
-	-khtml-user-select: none; /* Konqueror HTML */
-	-moz-user-select: none; /* Firefox */
-	-ms-user-select: none; /* Internet Explorer/Edge */
-	user-select: none; /* Non-prefixed version, currently
-	supported by Chrome and Opera */
-}
 
 .AboutContent .Columns h3{
 	font-family: sans-serif;
@@ -218,22 +225,25 @@ img:after {
 	width: 100%;
 	height: 100%;
 }
-#ImageDescription{
+.ImageDescription{
 	text-align: center;
 	font-size: 40px;
 	font-family: 'Roboto', sans-serif;
 	visibility: hidden;
 	position: absolute;
-	bottom: 20%;
+	top: 35%;
 	font-weight: bold;
 	letter-spacing: 1px;
 	width: 100%;
-	height: 100%;
+	height: auto;
 }
 
-#ImageWrap:hover #ImageDescription span {
+.ImageWrap:hover .ImageDescription span {
+	font-size: 60px;
+	letter-spacing: 5px;
 	visibility: visible;
-	opacity: 1;
+	animation-name: PhotoHeaderFadeIn;
+	animation-duration: 0.5s;
 }
 
 p.Paragraph{
@@ -254,12 +264,14 @@ p.Intro::first-letter {
 .Footnote{
 	display: block;
 	text-align: center;
-	padding: 100px 0 0 0;
+	padding: 80px 0 0 0;
 }
 .Footnote p{
-	font-size: 16	px;
+	font-size: 16px;
 	color: white;
 	font-family: 'Roboto', sans-serif;
+	padding: 8px 0 8px 0;
+	margin: 0;
 }
 .FooterButton img::hover{
 	color: grey;
@@ -327,29 +339,31 @@ td{
 	height: 50px;
 	border: 1px dashed black;
 }
-#ImageWrap{
+.ImageWrap{
 	/*animation-name: PhotoHeaderFadeIn;
 	animation-duration: 5s;*/
 	/*background-image: url(martin-18.jpg);*/
 	width: 100%;
-	height: auto;
+	height: 450px;
+	position: relative;
 }
 
-#PhotoHeader{
+.IndexPhotoHeader{
 	background: url(Optimized-martin-18.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
 	align-items: stretch;
-	height: auto;
+	height: 100%;
 	width: 100%;
+	object-fit: cover;
 	/*visibility: hidden;*/
 	max-width: 100%;
-	position:static;
+	position: absolute;
 	/*padding-top: 100px;*/
 
 }
-#PhotoHeader:hover{
-	opacity: 0.5;
+.IndexPhotoHeader:hover{
+	opacity: 0.3;
 }
 
 #Global-Content{
@@ -458,9 +472,13 @@ img {
 	.ThumbnailList ul li{
 		width: 25%;
 		height: auto;
+		max-width: 65px;
+    overflow: hidden;
+    max-height: 65px
 	}
 	.ThumbnailList ul{
 		width: 30%;
+		max-width: 260px;
 		padding: 0 35%;
 	}
 	.NavBar{
