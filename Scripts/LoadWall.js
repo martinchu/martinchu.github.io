@@ -1,11 +1,17 @@
 $(function(){
-
-  for(var i = 1; i < 2; i++){
-
-    // jQuery methods go here...
-    $("#photo"+i).prepend('<img src = \"https://scontent.cdninstagram.com/t51.2885-15/e35/16230458_168394810319730_8836914199570415616_n.jpg?ig_cache_key=MTQ0MzcyNTE2NjI3MzI3Nzc2MA%3D%3D.2\" />')
-    $("#photo1").delay(i*1000).css('visibility','visible');
-  }
+  $(".grid").css('visibility','hidden');
+  $.get( "Scripts/instagramPost.txt", function( data ) {
+    var rows = data.split('\n');
+    var imgNum = rows.length;
+    for(var i = 0; i < imgNum; i++){
+      var newimg = $("<img class = \"grid\" id=\"photo"+i+"\">")
+      newimg.attr('src',rows[i])
+      $("#PhotoWall").append(newimg)
+    }
+    for(var j = 0; j < imgNum; j++){
+      $("#photo"+j).delay(j*1000).css('visibility','visible');
+    }
+  }, "text").done(
+    responSquare();
+  )
 });
-
-// var rows = data.split('\n');

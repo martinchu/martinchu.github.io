@@ -242,7 +242,7 @@ img:after {
 }
 .ImageWrap:hover .ImageDescription span {
 	visibility: visible;
-	animation-name: PhotoHeaderFadeIn;
+	animation-name: TitleFadeInUp;
 	animation-duration: 0.5s;
 }
 
@@ -398,12 +398,16 @@ img {
 	user-drag: none;
 	max-width: 100%;
 }
-@keyframes PhotoHeaderFadeIn {
+@keyframes TitleFadeInUp {
 	from{
 		opacity: 0.1;
+		-webkit-transform: translate3d(0, 10%, 0);
+	 transform: translate3d(0, 10%, 0);
 	}
 	to{
 		opacity: 1;
+		-webkit-transform: none;
+	 transform: none;
 	}
 }
 
