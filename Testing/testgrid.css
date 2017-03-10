@@ -13,7 +13,10 @@ body{
   font-size: 0;
   background-size: cover;
   overflow: hidden;
+}
+gridV2{
   visibility: hidden;
+
 }
 
 .grid img{
