@@ -1,8 +1,25 @@
-/**{
-font-family: Helvetica Neue;
-}*/
+h2,h3,p{
+	-webkit-touch-callout: none; /* iOS Safari */
+	-webkit-user-select: none; /* Safari */
+	-khtml-user-select: none; /* Konqueror HTML */
+	-moz-user-select: none; /* Firefox */
+	-ms-user-select: none; /* Internet Explorer/Edge */
+	user-select: none; /* Non-prefixed version, currently
+	supported by Chrome and Opera */
+	font-family: 'Bebas Regular';
+	font-size: 20px;
+	letter-spacing: 1.2px;
+}
+#indexProjects,#indexPosts{
+	padding-top: 30px;
+	padding-bottom: 20px;
+}
+AboutMCp{
+	font-family: "Roboto", sans-serif;
+}
 #GlobalHeader {
 	background-color: black;
+	/*background-color: #24292E;*/
 	width: 100%;
 	height: 50px;
 	max-width: 100%;
@@ -11,26 +28,138 @@ font-family: Helvetica Neue;
 	position: static;
 	display: block;
 }
+div .Columns{
+	display: inline-block;
+	vertical-align: top;
+}
+
+#ProfilePicture{
+	width: 150px;
+	height: 150px;
+	text-align: center;
+	margin: 0 auto;
+	border-radius: 50%;
+	border: 4px solid white;
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 170px;
+}
+.TBC{
+	padding: 250px 0 250px 0;
+	text-align: center;
+}
+#ProfilePicture img{
+	border-radius: 50%;
+}
+.bkgd{
+	background: rgb(54, 25, 25);
+	background: rgba(54, 25, 25, .5);
+	background-repeat: no-repeat;
+}
+#AboutAnchor{
+	position: relative;
+	height: 250px;
+	width: 100%;
+}
+#AboutBackground{
+	position:absolute;
+	background: url("P1330011.JPG");
+	width: 100%;
+	height: 250px;
+	background-size: cover;
+	background-size: center center;
+	-webkit-filter: blur(5px) brightness(1) grayscale(100%);
+	-moz-filter: blur(5px) brightness(1) grayscale(100%);
+	-o-filter: blur(5px) brightness(1) grayscale(100%);
+	-ms-filter: blur(5px) brightness(1) grayscale(100%);
+}
 .NameOnTheWall h2{
 	text-align: center;
 	font-family: 'Roboto', sans-serif;
 }
+.FeedSubsection h2{
+	text-align: center;
+	font-family: 'Roboto', sans-serif;
+}
+.AboutContent{
+	margin-top: 50px;
+	padding-top: 50px;
+	padding-bottom: 100px;
+	font-family: 'Roboto', sans-serif;
+}
+.AboutContent h4{
+	font-size: 20px;
+	padding: 5px;
+	margin-top: 2px;
+	margin-bottom: 5px;
+}
+.CompanyLogo img{
+	width: 80%;
+	height: auto;
+	/*align-self: center;*/
+	/*margin-left: 9%;*/
+	margin-top: 13px;
+	margin-right:19%;
+}
+#AboutMC p{
+	margin: 0;
+}
+.AboutContent h5{
+	padding-left: 0;
+	margin-top: 2px;
+	margin-bottom: 2px;
+}
+#AboutSkillsSum p{
+	margin-top: 8px;
+}
+.SkillsSumEntry p{
+	color: grey;
+}
+.SkillsSumEntry{
+	padding-bottom: 30px;
+}
+#GoogleMap{
+	height: 400px;
+
+}
+.JobTitle{
+	font-family: 'Open Sans', sans-serif;
+	font-size: 16px;
+	padding-left: 10px;
+}
+.AboutContent h2{
+	font-size: 35px;
+	text-align: center;
+	padding-top: 20px;
+}
+
+
+.AboutContent .Columns h3{
+	font-family: sans-serif;
+	font-size: 20px;
+	font-style: italic;
+	letter-spacing: 0.7px;
+	color: grey;
+}
+
 #GlobalFooter{
 	/*background-color: #091323;*/
 	background-color: #d1d1d1;
-
 	display: block;
-	padding-top: 100px;
-	padding-bottom: 200px;
+	padding-top: 70px;
+	padding-bottom: 140px;
 }
 #LogoM img{
-	padding-left: 30px;
+	padding-left: 5%;
 	float: left;
 	/*max-width: inherit;*/
 	/*max-height: 100%;*/
 	/*max-width: 100%;*/
 	height: 50px;
 	width: 50px;
+	/*new width & height: 75px;*/
+	/*new margin-top: -11px;*/
 }
 .Container {
 	width:100%;
@@ -38,14 +167,17 @@ font-family: Helvetica Neue;
 	max-height: 100%;
 	max-width: 100%;
 	display: block;
+	height: 100%;
 }
 .NavBar {
 	float: right;
+	/*visibility: collapse;*/
+	display: none;
 }
 
 .InstagramPost{
 	/*width:*/
-
+	display: inline-block;
 }
 script{
 	/*display: */
@@ -69,9 +201,9 @@ script{
 }
 .ThumbnailList ul{
 	display: inline-block;
-	width:100%;
+	width:65%;
 	padding: 0 0 0 0;
-	margin: 0 0 0 0;
+	margin: 0 auto;
 }
 .ThumbnailList ul li {
 	color: white;
@@ -93,9 +225,27 @@ img:after {
 	width: 100%;
 	height: 100%;
 }
-#ImageWrapper > p{
+.ImageDescription{
 	text-align: center;
+	visibility: hidden;
+	position: absolute;
+	top: 35%;
+	width: 100%;
+	height: auto;
 }
+.ImageDescription span{
+	font-size: 100px;
+	font-family: 'Bebas Regular', sans-serif;
+	font-weight: bold;
+	letter-spacing: 10px;
+
+}
+.ImageWrap:hover .ImageDescription span {
+	visibility: visible;
+	animation-name: TitleFadeInUp;
+	animation-duration: 0.5s;
+}
+
 p.Paragraph{
 	color: grey;
 	/*font-family: 'HKGroteskRegular', Verdana;*/
@@ -114,18 +264,19 @@ p.Intro::first-letter {
 .Footnote{
 	display: block;
 	text-align: center;
-	padding: 100px 0 0 0;
+	padding: 80px 0 0 0;
 }
 .Footnote p{
-	font-size: 10px;
+	font-size: 16px;
 	color: white;
+	font-family: 'Roboto', sans-serif;
+	padding: 8px 0 8px 0;
+	margin: 0;
 }
 .FooterButton img::hover{
 	color: grey;
 }
-.NavBar ul li div:hover {
-	color: red;
-}
+
 .FooterButton img{
 	display: inline-block;
 	height: auto;
@@ -138,7 +289,6 @@ p.Intro::first-letter {
 	color: grey;
 	font-size: 18px;
 	font-family: 'Open Sans', sans-serif;
-	>>>>>>> origin/master
 }
 .NavBarItem {
 	height:100%;
@@ -147,7 +297,7 @@ p.Intro::first-letter {
 	-ms-user-select:none;
 	user-select: none;
 	font-size: 20px;
-	font-family: 'Roboto', sans-serif;;
+	font-family: 'Roboto', sans-serif;
 }
 a{
 	color: inherit;
@@ -171,21 +321,15 @@ h2{
 	list-style-type: none;
 	font-family: inherit;
 }
-#About-LeftColumn{
-	width: 100px;
-	height: 1000px;
-	background-color:#c3ccdb;
-	/*display:inline-block;*/
-	float: left;
+
+#PhotoWall{
+	background-color: black;
 }
-#About-RightColumn{
-	background-color:grey;
-	position: absolute;
-	/*display: inline-block;*/
-	float: right;
-}
-.About-Columns{
-	display: inline-block;
+.Col14{
+	width:25%;
+	height:auto;
+	vertical-align:top;
+	font-size: 0;
 }
 body{
 	margin: 0;
@@ -195,23 +339,38 @@ td{
 	height: 50px;
 	border: 1px dashed black;
 }
-
-#PhotoHeader{
-	animation-name: PhotoHeaderFadeIn;
-	animation-duration: 5s;
-	align-items: stretch;
-	height: auto;
+.ImageWrap{
+	/*animation-name: PhotoHeaderFadeIn;
+	animation-duration: 5s;*/
+	/*background-image: url(martin-18.jpg);*/
 	width: 100%;
-	max-width: 100%;
-	position:static;
-	/*padding-top: 100px;*/
+	height: 450px;
+	position: relative;
 }
-#PhotoHeader:hover{
 
+.IndexPhotoHeader{
+	background: url(Optimized-martin-18.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	align-items: stretch;
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
+	/*visibility: hidden;*/
+	max-width: 100%;
+	position: absolute;
+	/*padding-top: 100px;*/
+
+}
+.IndexPhotoHeader:hover{
+	opacity: 0.3;
 }
 
 #Global-Content{
 	/*display: inline-block;*/
+}
+#AboutResumeLink{
+	font-weight: bold;
 }
 .Circle {
 	display: block;
@@ -228,7 +387,7 @@ td{
 	display: inline-block;
 	text-align-last: right;
 	color: white;
-	font-family: Verdana;
+	/*font-family: Verdana;*/
 	font-size: 20px;
 }
 img {
@@ -239,15 +398,70 @@ img {
 	user-drag: none;
 	max-width: 100%;
 }
-@keyframes PhotoHeaderFadeIn {
+@keyframes TitleFadeInUp {
 	from{
 		opacity: 0.1;
+		-webkit-transform: translate3d(0, 30%, 0);
+	 	transform: translate3d(0, 30%, 0);
 	}
 	to{
 		opacity: 1;
+		-webkit-transform: none;
+	 transform: none;
 	}
 }
+
+@font-face{
+	font-family: 'Bebas Regular';
+	src: url('webfonts/bebas_regular_macroman/BEBAS___-webfont.eot');
+	src: url('webfonts/bebas_regular_macroman/BEBAS___-webfont.eot?iefix') format('eot'),
+	url('webfonts/bebas_regular_macroman/BEBAS___-webfont.woff') format('woff'),
+	url('webfonts/bebas_regular_macroman/BEBAS___-webfont.ttf') format('truetype'),
+	url('webfonts/bebas_regular_macroman/BEBAS___-webfont.svg#webfont') format('svg');
+}
+
+#AboutTitle{
+	position: absolute;
+	overflow:hidden;
+	margin: auto auto;
+	left: 0;
+	right: 0;
+	top:0;
+}
+
+#AboutTitle p{
+	font-family: 'Bebas Regular',sans-serif;
+	color: white;
+	text-align: center;
+	font-size: 130px;
+	margin: 0;
+	padding-top: 14px;
+}
+
+
+
+
 @media screen and (min-width: 750px){
+	#AboutAnchor{
+		height: 550px;
+	}
+	#AboutBackground{
+		height:550px;
+	}
+	#ProfilePicture{
+		top: 470px;
+		-webkit-filter: none;
+		-moz-filter: none;
+		-o-filter: none;
+		-ms-filter: none;
+	}
+	#LogoM img{
+		padding-left: 30px;
+	}
+	.NavBar {
+		display: block;
+	}
+
 	.NameOnTheWall{
 		padding: 80px 0 130px 0;
 		letter-spacing: 1px;
@@ -262,9 +476,24 @@ img {
 	.ThumbnailList ul li{
 		width: 25%;
 		height: auto;
+		max-width: 65px;
+		overflow: hidden;
+		max-height: 65px
 	}
 	.ThumbnailList ul{
-		width: 50%;
-		padding: 0 25%;
+		width: 30%;
+		max-width: 260px;
+		padding: 0 35%;
+	}
+	.NavBar{
+		visibility: visible;
+	}
+	div .Col13{
+		width: 33%;
+		height: auto;
+	}
+	div .Col23{
+		width: 66%;
+		height: auto;
 	}
 }

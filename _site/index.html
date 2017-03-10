@@ -3,37 +3,43 @@
 <head>
 	<link type="text/css" rel="stylesheet" href="stylesheet.css"/>
 	<link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/hk-grotesk" type="text/css"/>
-	<meta property="og:url"                content="http://martinchu.me" />
+	<meta property="og:url"                content="http://martinchu.xyz" />
 	<meta property="og:type"               content="article" />
-	<meta property="og:title"              content="MartinChu.me" />
+	<meta property="og:title"              content="MartinChu.xyz" />
 	<meta property="og:description"        content="A Website designed by Martin Chu." />
 
-
 	<!-- Imported Google Fonts -->
-	<link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto|Titillium+Web" rel="stylesheet">
+
 
 	<!-- <meta property="og:image"              content="http://static01.nyt.com/images/2015/02/19/arts/international/19iht-btnumbers19A/19iht-btnumbers19A-facebookJumbo-v2.jpg" /> -->
 	<title>MartinChu.xyz</title>
-	<link href = "Header Logo - Copy.jpg" rel="icon" type="image/gif">
+	<link href = "logo-black-small.png" rel="icon" type="image/gif">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 </head>
 <body>
+	<script src="Scripts/main.js"></script>
+
 	<div id="GlobalHeader">
 		<div class="Container">
 			<a id="LogoM" href="./index.html">
-				<img src="HeaderLogo.jpg" alt = "website logo">
+				<img src="logo-white-small.png" alt = "website logo">
 			</a>
 			<div class="NavBar">
 				<ul>
-					<li><div class= "NavBarItem"><a href="#">Projects</a></div></li>
-					<li><a class= "NavBarItem" href="#">Feed</a></li>
-					<li><a class= "NavBarItem" href="#">Blog</a></li>
-					<li><a class= "NavBarItem" href="./about.html">About</a></li>
-					<li><a class= "NavBarItem" href="./about.html">Resume</a></li>
+					<li><a class= "NavBarItem" href="./projects.html">PROJECTS</a></li>
+					<li><a class= "NavBarItem" href="./feed.html">FEED</a></li>
+					<li><a class= "NavBarItem" href="./blog.html">BLOG</a></li>
+					<li><a class= "NavBarItem" href="./about.html">ABOUT</a></li>
+					<li><a class= "NavBarItem" href="./Resume/RESUME_MARTIN_CHU0919_Finance.pdf" target="_blank">RESUME</a></li>
 				</ul>
 			</div>
 		</div>
 	</div>
+
+
+
+
 	<div class="Global-Content">
 		<div class="Container NameOnTheWall">
 			<h2> Martin Chu </h2>
@@ -41,11 +47,13 @@
 				<p>A student. A developer. A dreamer.</p>
 			</div>
 		</div>
-		<div id = "ImageWrapper">
-			<a href="./Instagram.html">
-				<img id="PhotoHeader" src="martin-18.jpg"/>
+		<div class = "ImageWrap">
+			<div class="ImageDescription">
+				<span>My Art</span>
+			</div>
+			<a href="./feed.html">
+				<img class="IndexPhotoHeader" src="martin-18.jpg"/>
 			</a>
-			<p> My Art </p>
 		</div>
 	</div>
 	<div id="GlobalFooter">
