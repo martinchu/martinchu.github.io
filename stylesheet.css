@@ -227,18 +227,20 @@ img:after {
 }
 .ImageDescription{
 	text-align: center;
-	font-size: 100px;
-	font-family: 'Bebas Regular', sans-serif;
 	visibility: hidden;
 	position: absolute;
 	top: 35%;
-	font-weight: bold;
-	letter-spacing: 1px;
 	width: 100%;
 	height: auto;
 }
+.ImageDescription span{
+	font-size: 100px;
+	font-family: 'Bebas Regular', sans-serif;
+	font-weight: bold;
+	letter-spacing: 10px;
+
+}
 .ImageWrap:hover .ImageDescription span {
-	letter-spacing: 5px;
 	visibility: visible;
 	animation-name: PhotoHeaderFadeIn;
 	animation-duration: 0.5s;
