@@ -340,8 +340,8 @@ td{
 	border: 1px dashed black;
 }
 .ImageWrap{
-	/*animation-name: PhotoHeaderFadeIn;
-	animation-duration: 5s;*/
+	/*animation-name: TitleFadeInUp;*/
+	/*animation-duration: 2s;*/
 	/*background-image: url(martin-18.jpg);*/
 	width: 100%;
 	height: 450px;
@@ -401,13 +401,13 @@ img {
 @keyframes TitleFadeInUp {
 	from{
 		opacity: 0.1;
-		-webkit-transform: translate3d(0, 30%, 0);
-	 	transform: translate3d(0, 30%, 0);
+		-webkit-transform: translate3d(0, 100%, 0);
+	 	transform: translate3d(0, 100%, 0);
 	}
 	to{
 		opacity: 1;
 		-webkit-transform: none;
-	 transform: none;
+	 	transform: none;
 	}
 }
 
