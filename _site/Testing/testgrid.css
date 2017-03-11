@@ -1,40 +1,11 @@
-script{
-  visibility: hidden;
-}
-
 body{
   margin: 0;
 }
 
-.grid{
-  box-sizing: border-box;
-  position: relative;
-  display: inline-block;
-  font-size: 0;
-  background-size: cover;
-  overflow: hidden;
-}
-  
+
+
 gridV2{
   visibility: hidden;
-
-}
-
-.grid img{
-  animation-name: ImageFadeIn;
-  animation-duration: 2.5s;
-  height: inherit;
-  width: inherit;
-  object-fit: cover;
-}
-
-@keyframes ImageFadeIn {
-  from{
-    opacity: 0;
-  }
-  to{
-    opacity: 1;
-  }
 }
 
 /*-webkit-filter: filter(value);
