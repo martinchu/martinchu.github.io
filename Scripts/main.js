@@ -28,14 +28,14 @@ function responSquare(){
   // document.getElementByClassName("WallPhoto")
   var cn = "grid";
   var col = 4;
-  var w = window.innerWidth;
-  var h = window.innerHeight;
+  var w = window.document.body.clientWidth;
+  var h = window.document.body.clientHeight;
   var photos = document.getElementsByClassName(cn);
   var length = photos.length;
   var text = "";
   var newwidth;
   if(w >= 750){
-    newwidth = w/col;
+    newwidth = w/col - 5;
   }
   else{
     newwidth = w;

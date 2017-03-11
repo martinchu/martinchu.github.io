@@ -10,6 +10,9 @@ h2,h3,p{
 	font-size: 20px;
 	letter-spacing: 1.2px;
 }
+script{
+	display:none;
+}
 #indexProjects,#indexPosts{
 	padding-top: 30px;
 	padding-bottom: 20px;
@@ -133,7 +136,27 @@ div .Columns{
 	text-align: center;
 	padding-top: 20px;
 }
+#PhotoWall{
+	/*width:100%;
+	height:auto;
+	display:flex;*/
+}
+.grid{
+  box-sizing: border-box;
+  display: inline-block;
+  font-size: 0;
+  background-size: cover;
+  overflow: hidden;
+}
+.grid img{
+  animation-name: ImageFadeIn;
+  animation-duration: 2.5s;
+  height: inherit;
+  width: inherit;
+  object-fit: cover;
+	font-size: 0;
 
+}
 
 .AboutContent .Columns h3{
 	font-family: sans-serif;
@@ -179,11 +202,6 @@ div .Columns{
 	/*width:*/
 	display: inline-block;
 }
-script{
-	/*display: */
-	display: block;
-}
-
 .NavBar ul li {
 	color: white;
 	float: left;
@@ -409,6 +427,14 @@ img {
 		-webkit-transform: none;
 	 	transform: none;
 	}
+}
+@keyframes ImageFadeIn {
+  from{
+    opacity: 0;
+  }
+  to{
+    opacity: 1;
+  }
 }
 
 @font-face{
