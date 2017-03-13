@@ -6,7 +6,7 @@ h2,h3,p{
 	-ms-user-select: none; /* Internet Explorer/Edge */
 	user-select: none; /* Non-prefixed version, currently
 	supported by Chrome and Opera */
-	font-family: 'Bebas Regular';
+	font-family: sans-serif;
 	font-size: 20px;
 	letter-spacing: 1.2px;
 }
@@ -17,8 +17,9 @@ script{
 	padding-top: 30px;
 	padding-bottom: 20px;
 }
-AboutMCp{
+#AboutMC p{
 	font-family: "Roboto", sans-serif;
+	font-size: 20px;
 }
 #GlobalHeader {
 	background-color: black;
@@ -118,6 +119,7 @@ div .Columns{
 }
 .SkillsSumEntry p{
 	color: grey;
+	font-family: 'Open Sans',sans-serif;
 }
 .SkillsSumEntry{
 	padding-bottom: 30px;
