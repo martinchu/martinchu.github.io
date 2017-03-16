@@ -6,6 +6,7 @@ body{
 
 gridV2{
   visibility: hidden;
+  display: none;
 }
 
 /*-webkit-filter: filter(value);
