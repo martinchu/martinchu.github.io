@@ -4,8 +4,13 @@ body{
 
 
 
-gridV2{
+.gridV2{
   visibility: hidden;
+  display: none;
+  box-sizing: border-box;
+  font-size: 0;
+  background-size: cover;
+  overflow: hidden;
 }
 
 /*-webkit-filter: filter(value);
