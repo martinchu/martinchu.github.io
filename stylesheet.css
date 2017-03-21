@@ -18,8 +18,10 @@ script{
 	padding-bottom: 20px;
 }
 #AboutMC p{
-	font-family: "Roboto", sans-serif;
-	font-size: 20px;
+	font-family: Georgia, serif;
+	font-size: 24px;
+	margin: 0;
+	text-align: justify;
 }
 #GlobalHeader {
 	background-color: black;
@@ -106,8 +108,12 @@ div .Columns{
 	margin-top: 13px;
 	margin-right:19%;
 }
-#AboutMC p{
-	margin: 0;
+#AboutMC{
+	width: 70%;
+
+	padding-right: 10%;
+	overflow: hidden;
+	padding-left: 10%;
 }
 .AboutContent h5{
 	padding-left: 0;
@@ -198,6 +204,7 @@ div .Columns{
 	float: right;
 	/*visibility: collapse;*/
 	display: none;
+	overflow: scroll;
 }
 
 .InstagramPost{
@@ -277,7 +284,7 @@ p.Intro::first-letter {
 	color: black;
 	font-size: 50px;
 	/*font-family: 'HKGroteskRegular', Verdana;*/
-	font-family: 'Roboto', sans-serif;
+	/*font-family: 'Roboto', sans-serif;*/
 	font-weight: bold;
 	font-style: normal;
 }
@@ -348,6 +355,7 @@ h2{
 	font-size: 10px;
 	font-family: sans-serif;
 	display: inline;
+	overflow: hidden;
 }
 #PhotoWall{
 	background-color: black;
@@ -522,6 +530,7 @@ img {
 	}
 	.NavBar{
 		visibility: visible;
+		overflow: hidden;
 	}
 	div .Col13{
 		width: 33%;
