@@ -22,7 +22,10 @@ function myMap() {
   currentLocation.open(map,marker);
 }
 
-
+function dropdown(){
+  $("#myDropdown").toggle();
+  console.log("done")
+}
 
 function responSquare(){
   // document.getElementByClassName("WallPhoto")
