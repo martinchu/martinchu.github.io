@@ -1,0 +1,6 @@
+function SortCategory(){
+  $(".")
+}
+function SortProficiency(){
+
+}

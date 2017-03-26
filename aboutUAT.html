@@ -73,14 +73,22 @@
 				<div class = "Columns Col13">
 					<h3>Skills</h3>
 					<div class = "SkillsSumEntry">
-						<h4>Website</h4>
-						<div class ="ProgrammingSkillsButton">
-							<div class = "ProgrammingLanguage">C++</div>
-							<div class = "ProgrammingLanguage">Java</div>
-							<div class = "ProgrammingLanguage">Javascript</div>
-							<div class = "ProgrammingLanguage">HTML</div>
-						</div>
-						<h4>Programming</h4>
+						<h4 id="Line1">Website</h4>
+						<div class = "ProgrammingLanguage Expert Backend">C++</div>
+						<div class = "ProgrammingLanguage Familiar Backend">Java</div>
+						<div class = "ProgrammingLanguage Novice Web">Javascript</div>
+						<div class = "ProgrammingLanguage Familiar Web">HTML</div>
+						<h4 id="Line2">BackEnd</h4>
+
+						<h4 id="Line3">Others</h4>
+						<div class = "ProgrammingLanguage Familiar Others">SQL</div>
+
+					</div>
+					<div id="ctrlSkillsDisplay">
+						<span>Sort Skills by:</span>
+						<span id ="SkillCategory" onclick="SortCategory()">Category of Language</span>
+						<span> | </span>
+						<span id ="SkillLevel" onclick="SortProficiency()">Level of Proficiency</span>
 					</div>
 				</div>
 				<div class = "Columns Col13">

@@ -13,6 +13,12 @@ h2,h3,p{
 script{
 	display:none;
 }
+
+div .Columns{
+	display: inline-block;
+	vertical-align: top;
+}
+
 #indexProjects,#indexPosts{
 	padding-top: 30px;
 	padding-bottom: 20px;
@@ -35,10 +41,7 @@ script{
 	position: static;
 	display: block;
 }
-div .Columns{
-	display: inline-block;
-	vertical-align: top;
-}
+
 
 #ProfilePicture{
 	width: 150px;
@@ -274,6 +277,7 @@ img:after {
 	animation-name: TitleFadeInUp;
 	animation-duration: 0.5s;
 }
+
 
 p.Paragraph{
 	color: grey;
@@ -581,10 +585,18 @@ img {
 	}
 	div .Col13{
 		width: 33%;
-		height: auto;
+		/*height: auto;*/
 	}
 	div .Col23{
 		width: 66%;
 		height: auto;
+	}
+	.Project{
+		height:200px;
+		background-color: grey;
+		text-align: center;
+		vertical-align: middle;
+		font-size: 30px;
+		font-family: 'Clean Sans',sans-serif;
 	}
 }
