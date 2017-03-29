@@ -19,24 +19,37 @@
 </head>
 <body>
 	<script src="Scripts/main.js"></script>
+	<script src="../Scripts/jquery-3.1.1.js"></script>
 
 	<div id="GlobalHeader">
 		<div class="Container">
-			<a id="LogoM" href="./index.html">
-				<img src="logo-white-small.png" alt = "website logo">
+			<a id="LogoM" href="/index.html">
+				<img src="/logo-white-small.png" alt = "website logo">
 			</a>
+			<div id ="MobileMenu">
+				<button onclick="dropdown()">
+					<span><img src = "/Thumbnails/nav_icon.png"/></span>
+				</button>
+			</div>
 			<div class="NavBar">
 				<ul>
-					<li><a class= "NavBarItem" href="./projects.html">PROJECTS</a></li>
-					<li><a class= "NavBarItem" href="./feed.html">FEED</a></li>
-					<li><a class= "NavBarItem" href="./blog.html">BLOG</a></li>
-					<li><a class= "NavBarItem" href="./about.html">ABOUT</a></li>
-					<li><a class= "NavBarItem" href="./Resume/RESUME_MARTIN_CHU0919_Finance.pdf" target="_blank">RESUME</a></li>
+					<li><a class= "NavBarItem" href="/projects.html">PROJECTS</a></li>
+					<li><a class= "NavBarItem" href="/feed.html">FEED</a></li>
+					<li><a class= "NavBarItem" href="/blog.html">BLOG</a></li>
+					<li><a class= "NavBarItem" href="/about.html">ABOUT</a></li>
+					<li><a class= "NavBarItem" href="/Resume/RESUME_MARTIN_CHU0919_Finance.pdf" target="_blank">RESUME</a></li>
+					<li></li>
 				</ul>
 			</div>
 		</div>
+		<div id="myDropdown" class="dropdown-content Container">
+			<a href="/projects.html">Projects</a>
+			<a href="/feed.html">Feed</a>
+			<a href="/blog.html">Blog</a>
+			<a href="/about.html">About</a>
+			<a href="/Resume/RESUME_MARTIN_CHU0919_Finance.pdf" target="_blank">Resume</a>
+		</div>
 	</div>
-
 
 
 
