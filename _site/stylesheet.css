@@ -21,7 +21,7 @@ div .Columns{
 
 #indexProjects,#indexPosts{
 	padding-top: 30px;
-	padding-bottom: 20px;
+	/*padding-bottom: 20px;*/
 }
 #AboutMC p{
 	font-family: Georgia, serif;
@@ -390,11 +390,12 @@ td{
 	height: 450px;
 	position: relative;
 }
-
-.IndexPhotoHeader{
+#PhotoHeaderFeed{
 	background: url(Optimized-martin-18.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
+}
+.IndexPhotoHeader{
 	align-items: stretch;
 	height: 100%;
 	width: 100%;
@@ -593,10 +594,23 @@ img {
 	}
 	.Project{
 		height:200px;
+		width:100%;
 		background-color: grey;
 		text-align: center;
-		vertical-align: middle;
-		font-size: 30px;
 		font-family: 'Clean Sans',sans-serif;
+		display: table;
+	}
+	.Project div{
+		display: table-cell;
+		/*height:100%;*/
+		font-color: white;
+		vertical-align: middle;
+	}
+	.Project div p{
+		margin: 0;
+		color: white;
+		font-size: 22px;
+		font-weight: 450;
+
 	}
 }

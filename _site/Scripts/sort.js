@@ -4,5 +4,4 @@ function SortCategory(){
 }
 function SortProficiency(){
   document.getElementById("button1").disabled = false;
-
 }
