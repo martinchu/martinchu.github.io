@@ -1,7 +1,16 @@
+function Line1(callback){
+
+}
+
 function SortCategory(){
-  document.getElementById("button2").disabled = false;
+  document.getElementById("SkillLevel").disabled = false;
+  document.getElementById("SkillCategory").disabled = true;
+  console.log("SC")
   // $(".")
 }
 function SortProficiency(){
-  document.getElementById("button1").disabled = false;
+  document.getElementById("SkillLevel").disabled = true;
+  document.getElementById("SkillCategory").disabled = false;
+  console.log("SP")
+
 }

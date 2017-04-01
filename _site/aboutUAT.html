@@ -22,27 +22,41 @@
 	<meta property="og:description"        content="Everything you need to know about Martin Chu" />
 	<meta property="og:image"              content="AboutBackground.jpg" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-
+	<script src="/Scripts/sort.js"></script>
 	<title>About</title>
 </head>
 <body>
 
 	<div id="GlobalHeader">
 		<div class="Container">
-			<a id="LogoM" href="./index.html">
-				<img src="logo-white-small.png" alt = "website logo">
+			<a id="LogoM" href="/index.html">
+				<img src="/logo-white-small.png" alt = "website logo">
 			</a>
+			<div id ="MobileMenu">
+				<button onclick="dropdown()">
+					<span><img src = "/Thumbnails/nav_icon.png"/></span>
+				</button>
+			</div>
 			<div class="NavBar">
 				<ul>
-					<li><a class= "NavBarItem" href="./projects.html">PROJECTS</a></li>
-					<li><a class= "NavBarItem" href="./feed.html">FEED</a></li>
-					<li><a class= "NavBarItem" href="./blog.html">BLOG</a></li>
-					<li><a class= "NavBarItem" href="./about.html">ABOUT</a></li>
-					<li><a class= "NavBarItem" href="./Resume/RESUME_MARTIN_CHU0919_Finance.pdf" target="_blank">RESUME</a></li>
+					<li><a class= "NavBarItem" href="/projects.html">PROJECTS</a></li>
+					<li><a class= "NavBarItem" href="/feed.html">FEED</a></li>
+					<li><a class= "NavBarItem" href="/blog.html">BLOG</a></li>
+					<li><a class= "NavBarItem" href="/about.html">ABOUT</a></li>
+					<li><a class= "NavBarItem" href="/Resume/RESUME_MARTIN_CHU0919_Finance.pdf" target="_blank">RESUME</a></li>
+					<li></li>
 				</ul>
 			</div>
 		</div>
+		<div id="myDropdown" class="dropdown-content Container">
+			<a href="/projects.html">Projects</a>
+			<a href="/feed.html">Feed</a>
+			<a href="/blog.html">Blog</a>
+			<a href="/about.html">About</a>
+			<a href="/Resume/RESUME_MARTIN_CHU0919_Finance.pdf" target="_blank">Resume</a>
+		</div>
 	</div>
+
 	<div class ="Global-Content">
 		<div id = "AboutAnchor">
 			<div class = "bkgd" id ="AboutBackground"></div>
@@ -86,9 +100,9 @@
 					</div>
 					<div id="ctrlSkillsDisplay">
 						<span>Sort Skills by:</span>
-						<span id ="SkillCategory" onclick="SortCategory()">Category of Language</span>
+						<button id ="SkillCategory" onclick="SortCategory()" disabled="true">Category of Language</button>
 						<span> | </span>
-						<span id ="SkillLevel" onclick="SortProficiency()">Level of Proficiency</span>
+						<button id ="SkillLevel" onclick="SortProficiency()">Level of Proficiency</button>
 					</div>
 				</div>
 				<div class = "Columns Col13">
