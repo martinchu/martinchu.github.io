@@ -25,9 +25,18 @@ function SortProficiency(){
   $("#Line1").html("Line1 Sort by Proficiency")
 
 }
+function Transition(num,ContentArray,callback){
+  $("line"+num).fadeOut(1000).html(ContentArray[num]).fadein(1000)
+  if(num<ContentArray.length){
+    callback(num+1,ContentArray,callback);
+  }
+}
 
 /*
 DRAFT:
+
+
+
 $(Button1).out(1000).html("dafsn").in(1000)
 
 $(button1).fadeout(1000, function(){
@@ -35,11 +44,11 @@ $(button1).fadeout(1000, function(){
 });
 
 $('#join').fadeOut(400, function() {
-  $(this).html('Success').fadeIn(3000, function() {
-    $(this).fadeOut(3000, function(){
-      $(this).html('Sign UP').fadeIn();
-    })
-  })
+$(this).html('Success').fadeIn(3000, function() {
+$(this).fadeOut(3000, function(){
+$(this).html('Sign UP').fadeIn();
+})
+})
 });
 
 
