@@ -407,6 +407,9 @@ td{
 	height: 50px;
 	border: 1px dashed black;
 }
+#ProjectFlexBox{
+	display: flex;
+}
 .ImageWrap{
 	/*animation-name: TitleFadeInUp;*/
 	/*animation-duration: 2s;*/
