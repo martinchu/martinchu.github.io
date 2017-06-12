@@ -178,7 +178,31 @@ div .Columns{
 	letter-spacing: 0.7px;
 	color: grey;
 }
-
+.ProjectItem{
+	height: 200px;
+	overflow: hidden;
+	padding-bottom: 20px;
+	vertical-align: top;
+}
+.ProjectItem .Thumbnail{
+	font-size: 20px;
+	width: 33%;
+	height: 200px;
+	background-color: grey;
+	display: inline-block;
+}
+.ProjectItem .Title{
+	width: 60%;
+	height: 200px;
+	display: inline-block;
+}
+.ProjectItem .Title h2{
+	padding-left: 20px;
+	font-size: 30px;
+	text-align: left;
+	margin-top: 0;
+	margin-bottom: 0;
+}
 #GlobalFooter{
 	/*background-color: #091323;*/
 	background-color: #d1d1d1;
@@ -382,6 +406,9 @@ body{
 td{
 	height: 50px;
 	border: 1px dashed black;
+}
+#ProjectFlexBox{
+	display: flex;
 }
 .ImageWrap{
 	/*animation-name: TitleFadeInUp;*/
