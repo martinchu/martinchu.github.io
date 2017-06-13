@@ -1,10 +1,10 @@
 function myMap() {
   var mapProp= {
-    center:new google.maps.LatLng(51.508742,-0.120850),
+    center:new google.maps.LatLng(22.28552,114.15769),
     zoom:3,
   };
   var map=new google.maps.Map(document.getElementById("GoogleMap"),mapProp);
-  var myCenter = new google.maps.LatLng(51.508742,-0.120850);
+  var myCenter = new google.maps.LatLng(22.28552,114.15769);
   var image = {
     url:'logo-black-small.png',
     size: new google.maps.Size(50, 50),
