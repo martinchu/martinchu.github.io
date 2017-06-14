@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <link type="text/css" rel="stylesheet" href="stylesheet.css"/>
-<link type="text/css" rel="stylesheet" href="Testing/testgrid.css"/>
+<!-- <link type="text/css" rel="stylesheet" href="Testing/testgrid.css"/> -->
 
 <!-- <link href = "logo-black-small.png" rel="icon" type="image/gif"> -->
 <link rel="apple-touch-icon" sizes="76x76" href="Thumbnails/apple-touch-icon.png">
@@ -16,17 +16,16 @@
 
 <html>
 <head>
-
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 	<meta property="og:url"                content="martinchu.xyz/about.html" />
 	<meta property="og:type"               content="website" />
 	<meta property="og:title"              content="About | MartinChu.xyz" />
 	<meta property="og:description"        content="Everything you need to know about Martin Chu" />
 	<meta property="og:image"              content="AboutBackground.jpg" />
-
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<script src="/Scripts/sort.js"></script>
 	<script src="/Scripts/main.js"></script>
 	<script src="/Scripts/jquery-3.1.1.js"></script>
-
+	<script src="/Scripts/vue.js"></script>
 	<title>About</title>
 </head>
 <body>
@@ -62,11 +61,18 @@
 	</div>
 
 
+
+
+
+
+
+
+
 	<div class ="Global-Content">
 		<div id = "AboutAnchor">
 			<div class = "bkgd" id ="AboutBackground"></div>
 			<div id = "AboutTitle"><p>#About</p></div>
-			<div id = "ProfilePicture"><img src = "Headshot.jpg"></div>
+			<div id = "ProfilePicture"><img src = "./Assets/Photos/Headshot.jpg"></div>
 		</div>
 
 		<div class= "Container AboutContent" id = "AboutMC">
@@ -86,8 +92,76 @@
 			<img src = "Thumbnails/signature.png">
 		</div>
 		<div class= "Container AboutContent" id ="AboutSkillsSum">
-			<h2> Martin's Skill Summary (Coming Soon) </h2>
+			<h2> Martin's Skill Summary </h2>
+			<div id ="SkillsTable">
+				<div class = "Columns Col13">
+					<h3>Skills</h3>
+					<div class = "SkillsSumEntry">
+						<h4 id="Line1">Programming Languages</h4>
+						<div class = "ProgrammingLanguage Expert Backend">C++, C, Java, SQL, Python, Visual Basic</div>
+						<h4 id="Line2">Web Development</h4>
+						<div class = "ProgrammingLanguage Familiar Backend">HTML, CSS, JavaScript, Node JS, Vue JS, SQL</div>
+						<h4 id="Line3">Tools</h4>
+						<div class = "ProgrammingLanguage Novice Web">Git, Jekyll</div>
+					</div>
+				</div>
+				<div class = "Columns Col13">
+					<h3>Job Experience</h3>
+					<div class = "SkillsSumEntry">
+						<div class = "Columns Col13 CompanyLogo">
+							<img src = "Thumbnails/T1-2500x2500.png">
+						</div>
+						<div class = "Columns Col23">
+							<h4>Terminal 1</h4>
+							<h5 class = "JobTitle">Software Engineer</h5>
+							<p>Developing APIs and various tools to automate the job posting process from internal server to major job boards
+							</p>
+						</div>
+					</div>
+					<div class = "SkillsSumEntry">
+						<div class = "Columns Col13 CompanyLogo">
+							<img src = "Thumbnails/agf.png">
+						</div>
+						<div class = "Columns Col23">
+							<h4>AGF Management Limited</h4>
+							<h5 class = "JobTitle">Quality Assurance Associate</h5>
+							<p>Created SQL queries to automate and simplify standardized validation workflow process and promote delivery efficiency
+							</p>
+						</div>
+					</div>
+					<div class = "SkillsSumEntry">
+						<div class = "Columns Col13 CompanyLogo">
+							<img src = "Thumbnails/pwc.png">
+						</div>
+						<div class = "Columns Col23">
+							<h4>PriceWaterhouseCoopers LLC</h4>
+							<h5 class = "JobTitle">Tax Technology Consultant</h5>
+							<p>Managed over 5 internal technology projects of the Hong Kong Tax division</p>
+						</div>
+					</div>
+				</div>
+				<div class = "Columns Col13">
+					<h3>Others</h3>
+					<div class = "SkillsSumEntry">
+						<h4>Personal Coding Projects</h4>
+				</div>
+			</div>
+			<div class ="Columns Col13">
+				<p>
+
+				</p>
+			</div>
 			<p style="text-align:center; padding-top: 100px;">Click <span id ="AboutResumeLink"><a href="./Resume/RESUME_MARTIN_CHU0424.pdf">Here</a></span> to view my full resume</p>
+
+
+
+
+
+			<h2> Martin's Current Location </h2>
+			<div id = "GoogleMap"></div>
+			<script src = "Scripts/main.js"> myMap();</script>
+			<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB1yDPCKc_75j3hovWJuYTmKgPILsGrTw8&callback=myMap"></script>
+			<script src="/Scripts/sortVue.js"></script>
 
 			<!-- <p><a href="#AboutBackground">Back to top</a></p> -->
 		</div>
