@@ -3,10 +3,10 @@
 <!-- <link type="text/css" rel="stylesheet" href="Testing/testgrid.css"/> -->
 
 <!-- <link href = "logo-black-small.png" rel="icon" type="image/gif"> -->
-<link rel="apple-touch-icon" sizes="76x76" href="Thumbnails/apple-touch-icon.png">
-<link rel="icon" type="image/png" href="Thumbnails/favicon-32x32.png" sizes="32x32">
-<link rel="icon" type="image/png" href="Thumbnails/favicon-16x16.png" sizes="16x16">
-<link rel="manifest" href="Thumbnails/manifest.json">
+<link rel="apple-touch-icon" sizes="76x76" href="/Assets/Thumbnails/apple-touch-icon.png">
+<link rel="icon" type="image/png" href="/Assets/Thumbnails/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/Assets/Thumbnails/favicon-16x16.png" sizes="16x16">
+<link rel="manifest" href="/Assets/Thumbnails/manifest.json">
 <link rel="mask-icon" href="Thumbnails/safari-pinned-tab.svg" color="#5bbad5">
 <meta name="theme-color" content="#ffffff">
 
@@ -20,7 +20,7 @@
 	<meta property="og:type"               content="website" />
 	<meta property="og:title"              content="About | MartinChu.xyz" />
 	<meta property="og:description"        content="Everything you need to know about Martin Chu" />
-	<meta property="og:image"              content="AboutBackground.jpg" />
+	<meta property="og:image"              content="/Asset/Photos/AboutBackground.jpg" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 	<script src="/Scripts/sort.js"></script>
 	<script src="/Scripts/main.js"></script>
@@ -33,11 +33,11 @@
 	<div id="GlobalHeader">
 		<div class="Container">
 			<a id="LogoM" href="/index.html">
-				<img src="/logo-white-small.png" alt = "website logo">
+				<img src="/Assets/Photos/LogoWhiteSmall.png" alt = "website logo">
 			</a>
 			<div id ="MobileMenu">
 				<button onclick="dropdown()">
-					<span><img src = "/Thumbnails/nav_icon.png"/></span>
+					<span><img src = "/Assets/Thumbnails/nav_icon.png"/></span>
 				</button>
 			</div>
 			<div class="NavBar">
@@ -59,14 +59,6 @@
 			<a href="/Resume/RESUME_MARTIN_CHU0424.pdf" target="_blank">Resume</a>
 		</div>
 	</div>
-
-
-
-
-
-
-
-
 
 	<div class ="Global-Content">
 		<div id = "AboutAnchor">
@@ -94,26 +86,8 @@
 		<div class= "Container AboutContent" id ="AboutSkillsSum">
 			<h2> Martin's Skill Summary </h2>
 			<div id ="SkillsTable">
-				<div id ="SortRoot">
+				<div class = "Columns Col13" id ="SortRoot">
 					{{ lineOne }}
-				</div>
-				<div class = "Columns Col13">
-					<h3>Skills</h3>
-					<div class = "SkillsSumEntry">
-						<h4 id="Line1">Programming Languages</h4>
-						<div class = "ProgrammingLanguage Expert Backend">C++, C, Java, SQL, Python, Visual Basic</div>
-						<h4 id="Line2">Web Development</h4>
-						<div class = "ProgrammingLanguage Familiar Backend">HTML, CSS, JavaScript, Node JS, Vue JS, SQL</div>
-						<h4 id="Line3">Tools</h4>
-						<div class = "ProgrammingLanguage Novice Web">Git, Jekyll</div>
-
-					</div>
-					<div id="ctrlSkillsDisplay">
-						<span>Sort Skills by:</span>
-						<button id ="SkillCategory" onclick="SortCategory()" disabled="true">Category of Language</button>
-						<span> | </span>
-						<button id ="SkillLevel" onclick="SortProficiency()">Level of Proficiency</button>
-					</div>
 				</div>
 				<div class = "Columns Col13">
 					<h3>Job Experience</h3>
@@ -144,7 +118,7 @@
 							<img src = "Thumbnails/pwc.png">
 						</div>
 						<div class = "Columns Col23">
-							<h4 class = "JobTitle">PriceWaterhouseCoopers LLC</h4>
+							<h4>PriceWaterhouseCoopers LLC</h4>
 							<h5 class = "JobTitle">Tax Technology Consultant</h5>
 							<p>Managed over 5 internal technology projects of the Hong Kong Tax division</p>
 						</div>
@@ -171,6 +145,7 @@
 			<div id = "GoogleMap"></div>
 			<script src = "Scripts/main.js"> myMap();</script>
 			<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB1yDPCKc_75j3hovWJuYTmKgPILsGrTw8&callback=myMap"></script>
+			<script src="/Scripts/sortVue.js"></script>
 
 			<!-- <p><a href="#AboutBackground">Back to top</a></p> -->
 		</div>
@@ -215,6 +190,5 @@
 		</div>
 		<!-- <iframe src="https://embed.spotify.com/?uri=spotify%3Auser%3A1172758299%3Aplaylist%3A1ExdKCIxLQZcg7vXQW8gt7" width="900" height="600" frameborder="0" allowtransparency="true"></iframe> -->
 	</div>
-	<script src="/Scripts/sortVue.js"></script>
 </body>
 </html>

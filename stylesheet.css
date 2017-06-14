@@ -75,7 +75,7 @@ div .Columns{
 }
 #AboutBackground{
 	position:absolute;
-	background: url("AboutBackground.jpg");
+	background: url("./Assets/Photos/AboutBackground.jpg");
 	width: 100%;
 	height: 250px;
 	background-size: cover;
