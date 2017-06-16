@@ -33,7 +33,7 @@
 	<div id="GlobalHeader">
 		<div class="Container">
 			<a id="LogoM" href="/index.html">
-				<img src="/Assets/Photos/LogoWhiteSmall.png" alt = "website logo">
+				<img src="/Assets/Thumbnails/LogoWhiteSmall.png" alt = "website logo">
 			</a>
 			<div id ="MobileMenu">
 				<button onclick="dropdown()">
@@ -87,13 +87,14 @@
 			<h2> Martin's Skill Summary </h2>
 			<div id ="SkillsTable">
 				<div class = "Columns Col13" id ="SortRoot">
-					{{ lineOne }}
+					<h3> Technical Skills </h3>
+					<subtitle v-for="subtitle in subtitle"></subtitle>
 				</div>
 				<div class = "Columns Col13">
 					<h3>Job Experience</h3>
 					<div class = "SkillsSumEntry">
 						<div class = "Columns Col13 CompanyLogo">
-							<img src = "Thumbnails/T1-2500x2500.png">
+							<img src = "/Assets/Thumbnails/T1-2500x2500.png">
 						</div>
 						<div class = "Columns Col23">
 							<h4>Terminal 1</h4>
@@ -104,7 +105,7 @@
 					</div>
 					<div class = "SkillsSumEntry">
 						<div class = "Columns Col13 CompanyLogo">
-							<img src = "Thumbnails/agf.png">
+							<img src = "/Assets/Thumbnails/agf.png">
 						</div>
 						<div class = "Columns Col23">
 							<h4>AGF Management Limited</h4>
@@ -115,7 +116,7 @@
 					</div>
 					<div class = "SkillsSumEntry">
 						<div class = "Columns Col13 CompanyLogo">
-							<img src = "Thumbnails/pwc.png">
+							<img src = "/Assets/Thumbnails/pwc.png">
 						</div>
 						<div class = "Columns Col23">
 							<h4>PriceWaterhouseCoopers LLC</h4>
