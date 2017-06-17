@@ -1,7 +1,14 @@
+Vue.component('subtitle',{
+  props: ['subtitle'],
+  template: `<h4>{{ subtitle.title}}</h4>`
+})
+
 new Vue({
   el: '#SortRoot',
   data: {
-    lineOne: "Back-end",
+
+    SkillsCategory: [ "Back-end", "Web Development", "Others"],
+    SkillsLevel: ['Expert','Intermediate','']
   }
 
 })
