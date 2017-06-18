@@ -1,6 +1,10 @@
 Vue.component('subtitle',{
   props: ['subtitle'],
-  template: `<h4>{{ subtitle.title}}</h4>`
+  template: `
+  <div>
+  <h4>{{ subtitle.title }}</h4>
+  <p> {{ subtitle.content }} </p>
+  </div>`
 })
 
 new Vue({
@@ -9,6 +13,9 @@ new Vue({
 
     SkillsCategory: [ "Back-end", "Web Development", "Others"],
     SkillsLevel: ['Expert','Intermediate','']
+  },
+  computed:{
+
   }
 
 })
