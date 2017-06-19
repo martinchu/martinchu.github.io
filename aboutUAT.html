@@ -89,6 +89,11 @@
 				<div class = "Columns Col13" id ="SortRoot">
 					<h3> Technical Skills </h3>
 					<subtitle v-for="subtitle in subtitle"></subtitle>
+					<div id="SkillsSwitch">
+						<form v-on:submit.prevent="toggleSkills">
+							<input type = "submit" value = "Update" class = "btn">
+						</form>
+					</div>
 				</div>
 				<div class = "Columns Col13">
 					<h3>Job Experience</h3>
@@ -129,67 +134,67 @@
 					<h3>Others</h3>
 					<div class = "SkillsSumEntry">
 						<h4>Personal Coding Projects</h4>
+					</div>
+				</div>
+				<div class ="Columns Col13">
+					<p>
+
+					</p>
+				</div>
+				<p style="text-align:center; padding-top: 100px;">Click <span id ="AboutResumeLink"><a href="./Resume/RESUME_MARTIN_CHU0424.pdf">Here</a></span> to view my full resume</p>
+
+
+
+
+
+				<h2> Martin's Current Location </h2>
+				<div id = "GoogleMap"></div>
+				<script src = "Scripts/main.js"> myMap();</script>
+				<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB1yDPCKc_75j3hovWJuYTmKgPILsGrTw8&callback=myMap"></script>
+				<script src="/Scripts/sortVue.js"></script>
+
+				<!-- <p><a href="#AboutBackground">Back to top</a></p> -->
+			</div>
+
+		</div>
+		<div id="GlobalFooter">
+			<div class="Container">
+				<div class = "ThumbnailList">
+					<ul>
+						<li>
+							<div>
+								<a class = "FooterButton" href="https://www.facebook.com/3artinchuchu">
+									<img src = "Thumbnails/Facebook.png">
+								</a>
+							</div>
+						</li>
+						<li>
+							<div>
+								<a class = "FooterButton" href="https://www.instagram.com/martin_chuchu/?hl=en">
+									<img src = "Thumbnails/Instagram.png">
+								</a>
+							</div>
+						</li>
+						<li>
+							<div>
+								<a class = "FooterButton" href="https://www.twitter.com/martin_chuchu">
+									<img src = "Thumbnails/Twitter.png">
+								</a>
+							</div>
+						</li>
+						<li>
+							<a class = "FooterButton" href="https://github.com/martinchu">
+								<img src = "Thumbnails/Github.png">
+							</a>
+						</li>
+					</ul>
 				</div>
 			</div>
-			<div class ="Columns Col13">
-				<p>
-
-				</p>
+			<div class = "Footnote">
+				<p>Created by Martin Chu in 2016 </p>
+				<p>Last Updated: March 2017 </p>
 			</div>
-			<p style="text-align:center; padding-top: 100px;">Click <span id ="AboutResumeLink"><a href="./Resume/RESUME_MARTIN_CHU0424.pdf">Here</a></span> to view my full resume</p>
-
-
-
-
-
-			<h2> Martin's Current Location </h2>
-			<div id = "GoogleMap"></div>
-			<script src = "Scripts/main.js"> myMap();</script>
-			<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB1yDPCKc_75j3hovWJuYTmKgPILsGrTw8&callback=myMap"></script>
-			<script src="/Scripts/sortVue.js"></script>
-
-			<!-- <p><a href="#AboutBackground">Back to top</a></p> -->
+			<!-- <iframe src="https://embed.spotify.com/?uri=spotify%3Auser%3A1172758299%3Aplaylist%3A1ExdKCIxLQZcg7vXQW8gt7" width="900" height="600" frameborder="0" allowtransparency="true"></iframe> -->
 		</div>
-
-	</div>
-	<div id="GlobalFooter">
-		<div class="Container">
-			<div class = "ThumbnailList">
-				<ul>
-					<li>
-						<div>
-							<a class = "FooterButton" href="https://www.facebook.com/3artinchuchu">
-								<img src = "Thumbnails/Facebook.png">
-							</a>
-						</div>
-					</li>
-					<li>
-						<div>
-							<a class = "FooterButton" href="https://www.instagram.com/martin_chuchu/?hl=en">
-								<img src = "Thumbnails/Instagram.png">
-							</a>
-						</div>
-					</li>
-					<li>
-						<div>
-							<a class = "FooterButton" href="https://www.twitter.com/martin_chuchu">
-								<img src = "Thumbnails/Twitter.png">
-							</a>
-						</div>
-					</li>
-					<li>
-						<a class = "FooterButton" href="https://github.com/martinchu">
-							<img src = "Thumbnails/Github.png">
-						</a>
-					</li>
-				</ul>
-			</div>
-		</div>
-		<div class = "Footnote">
-			<p>Created by Martin Chu in 2016 </p>
-			<p>Last Updated: March 2017 </p>
-		</div>
-		<!-- <iframe src="https://embed.spotify.com/?uri=spotify%3Auser%3A1172758299%3Aplaylist%3A1ExdKCIxLQZcg7vXQW8gt7" width="900" height="600" frameborder="0" allowtransparency="true"></iframe> -->
-	</div>
-</body>
-</html>
+	</body>
+	</html>
