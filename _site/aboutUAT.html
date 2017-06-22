@@ -95,7 +95,7 @@ heading: aboutUAT
 			<div id ="SkillsTable">
 				<div class = "Columns Col13" id ="SortRoot">
 					<h3> Technical Skills </h3>
-					<subtitle v-for="subtitle in subtitle"></subtitle>
+					<entry v-for="section in sections" v-bind:section="section" v-bind:sorting-category="sortingCategory"></entry>
 					<div id="SkillsSwitch">
 						<!-- <form v-on:submit.prevent="toggleSkills">
 							<input type = "submit" value = "Update" class = "btn">

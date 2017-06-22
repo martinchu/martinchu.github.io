@@ -1,21 +1,20 @@
-Vue.component('subtitle',{
-  props: ['subtitle'],
-  data:{
-
-  },
+var e = Vue.component('entry',{
+  props: ['section','sortingCategory'],
   template: `
   <div>
-  <h4>{{ subtitle.title }}</h4>
-  <p> {{ subtitle.content }} </p>
+  <h4>{{ title }}</h4>
+  <p> {{ content }} </p>
   </div>`,
   computed:{
     content:function(){
-
+      return this.sortingCategory? this.section.categoryContent: this.section.proficiencyContent;
     },
     title: function(){
-
+      return this.sortingCategory? this.section.categorySubtitle: this.section.proficiencySubtitle;
     }
+
   }
+
 })
 
 new Vue({
@@ -24,9 +23,32 @@ new Vue({
     byCategoryText : "Sort Skills by Category",
     byProficiencyText: "Sort Skills by Proficiency",
     sortingCategory: true,
-    SkillsCategory: [ "Back-end", "Web Development", "Others"],
-    SkillsLevel: ['Expert','Intermediate','']
+    // SkillsCategory: [ "Back-end", "Web Development", "Others"],
+    // SkillsLevel: ['Expert','Intermediate','']
+    sections:[
+      {
+        categorySubtitle: "Backend",
+        categoryContent: "C++",
+        proficiencySubtitle: "Expert",
+        proficiencyContent: "C++"
+      },
+      {
+        categorySubtitle:"Frontend",
+        categoryContent: "HTML",
+        proficiencySubtitle: "Proficient",
+        proficiencyContent: "Vue"
+      },
+      {
+        categorySubtitle:"Others",
+        categoryContent:"",
+        proficiencySubtitle: "Familiar",
+        proficiencyContent:" Vue "
+      }
+    ]
   },
+  // components:{
+  //   entry
+  // },
   methods: {
     toggleSkills:function(){
       this.sortingCategory = !this.sortingCategory;
