@@ -28,15 +28,15 @@ new Vue({
     sections:[
       {
         categorySubtitle: "Backend",
-        categoryContent: "C++",
+        categoryContent: "C++, C, Java, SQL, Python, Visual Basic",
         proficiencySubtitle: "Expert",
         proficiencyContent: "C++"
       },
       {
         categorySubtitle:"Frontend",
-        categoryContent: "HTML",
+        categoryContent: "HTML, CSS, JavaScript, Node JS, Vue JS, SQL",
         proficiencySubtitle: "Proficient",
-        proficiencyContent: "Vue"
+        proficiencyContent: "Vue.JS, "
       },
       {
         categorySubtitle:"Others",
