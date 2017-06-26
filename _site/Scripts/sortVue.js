@@ -30,19 +30,19 @@ new Vue({
         categorySubtitle: "Backend",
         categoryContent: "C++, C, Java, SQL, Python, Visual Basic",
         proficiencySubtitle: "Expert",
-        proficiencyContent: "C++"
+        proficiencyContent: "C++, HTML, CSS"
       },
       {
-        categorySubtitle:"Frontend",
-        categoryContent: "HTML, CSS, JavaScript, Node JS, Vue JS, SQL",
+        categorySubtitle:"Web Development",
+        categoryContent: "HTML, CSS, JavaScript, Node JS, Vue JS",
         proficiencySubtitle: "Proficient",
-        proficiencyContent: "Vue.JS, "
+        proficiencyContent: "Vue.JS, JavaScript"
       },
       {
-        categorySubtitle:"Others",
-        categoryContent:"",
+        categorySubtitle:"Others/Tools",
+        categoryContent:"Git, Jekyll, Netlify",
         proficiencySubtitle: "Familiar",
-        proficiencyContent:" Vue "
+        proficiencyContent:" Node.JS, "
       }
     ]
   },
