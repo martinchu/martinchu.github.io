@@ -36,13 +36,13 @@ new Vue({
         categorySubtitle:"Web Development",
         categoryContent: "HTML, CSS, JavaScript, Node JS, Vue JS",
         proficiencySubtitle: "Proficient",
-        proficiencyContent: "Vue.JS, JavaScript"
+        proficiencyContent: "Vue.JS, JavaScript, C, Java, Python, SQL"
       },
       {
         categorySubtitle:"Others/Tools",
-        categoryContent:"Git, Jekyll, Netlify",
+        categoryContent:"SQL, Git, Jekyll, Netlify",
         proficiencySubtitle: "Familiar",
-        proficiencyContent:" Node.JS, "
+        proficiencyContent:" Node.JS, Nuxt.JS, Visual Basic"
       }
     ]
   },
