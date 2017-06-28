@@ -593,10 +593,11 @@ img {
 	text-align: center;
 }
 #SkillsSwitch button{
-	padding: 8px 7px 8px 7px;
+	padding: 10px 10px 10px 10px;
 	border: 0;
 	font-weight: bold;
-	font-size: 15px;
+	font-size: 20px;
+	font-family: 'Roboto',sans-serif;
 }
 
 
@@ -604,9 +605,7 @@ img {
 	#AboutTitle p{
 		font-size: 100px;
 		letter-spacing: 8px;
-
 	}
-
 
 	#MobileMenu{
 		display: none;
