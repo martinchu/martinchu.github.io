@@ -1,7 +1,7 @@
 var e = Vue.component('entry',{
   props: ['section','sortingCategory'],
   template: `
-  <div>
+  <div class = "SkillsSumEntry">
   <h4>{{ title }}</h4>
   <p> {{ content }} </p>
   </div>`,
@@ -36,13 +36,13 @@ new Vue({
         categorySubtitle:"Web Development",
         categoryContent: "HTML, CSS, JavaScript, Node JS, Vue JS",
         proficiencySubtitle: "Proficient",
-        proficiencyContent: "Vue.JS, JavaScript, Java, SQL"
+        proficiencyContent: "Vue.JS, JavaScript, C, Java, Python, SQL"
       },
       {
         categorySubtitle:"Others/Tools",
         categoryContent:"SQL, Git, Jekyll, Netlify",
         proficiencySubtitle: "Familiar",
-        proficiencyContent:" Node.JS, Nuxt.JS"
+        proficiencyContent:" Node.JS, Nuxt.JS, Visual Basic"
       }
     ]
   },

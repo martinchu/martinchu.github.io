@@ -1,7 +1,7 @@
 var e = Vue.component('entry',{
   props: ['section','sortingCategory'],
   template: `
-  <div>
+  <div class = "SkillsSumEntry">
   <h4>{{ title }}</h4>
   <p> {{ content }} </p>
   </div>`,
