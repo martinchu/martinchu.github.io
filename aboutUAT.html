@@ -96,9 +96,6 @@ heading: aboutUAT
 					<h3> Technical Skills </h3>
 					<entry v-for="section in sections" v-bind:section="section" v-bind:sorting-category="sortingCategory"></entry>
 					<div id="SkillsSwitch">
-						<!-- <form v-on:submit.prevent="toggleSkills">
-							<input type = "submit" value = "Update" class = "btn">
-						</form> -->
 						<button @click="toggleSkills"> {{ sortingCategory? byCategoryText : byProficiencyText }} </button>
 					</div>
 
@@ -107,7 +104,9 @@ heading: aboutUAT
 					<h3>Job Experience</h3>
 					<div class = "SkillsSumEntry">
 						<div class = "Columns Col13 CompanyLogo">
-							<img src = "/Assets/Thumbnails/T1-2500x2500.png">
+							<a href = "http://tty1.co">
+								<img src = "/Assets/Thumbnails/T1-2500x2500.png">
+							</a>
 						</div>
 						<div class = "Columns Col23">
 							<h4>Terminal 1</h4>
