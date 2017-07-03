@@ -1,8 +1,13 @@
 What to work on:
 
-1. Prevent to show the failed loaded logo when internet is down?
-2. Align the buttons?
-3. Develop Content
-4. Animation?
-5. Integrate IG?
-6. News feed that features my work, youtube videos I like, etc.?
+
+Fixes:
+
+- Thumbnail Folder removed/migrated
+- Find New Footer Thumbnail
+- Vue JS support on Instagram Photos
+
+
+Creative Content:
+
+- 
