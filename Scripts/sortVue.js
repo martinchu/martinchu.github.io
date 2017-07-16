@@ -39,8 +39,8 @@ new Vue({
         proficiencyContent: "Vue.JS, JavaScript, C, Java, Python, SQL"
       },
       {
-        categorySubtitle:"Others/Tools",
-        categoryContent:"SQL, Git, Jekyll, Netlify",
+        categorySubtitle:"Others/Tools/APIs",
+        categoryContent:"SQL, Git, Jekyll, Netlify, Rebrandly API, WebDriverIO, ExpressIO, Airtable API",
         proficiencySubtitle: "Familiar",
         proficiencyContent:" Node.JS, Nuxt.JS, Visual Basic"
       }
