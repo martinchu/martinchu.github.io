@@ -34,10 +34,6 @@ script{
 	padding-bottom: 50%;
 }
 
-div .Columns{
-	display: inline-block;
-	vertical-align: top;
-}
 
 #indexProjects,#indexPosts{
 	padding-top: 30px;
@@ -125,13 +121,15 @@ div .Columns{
 	margin-top: 2px;
 	margin-bottom: 5px;
 }
+.CompanyLogo {
+	height: 100px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
 .CompanyLogo img{
-	width: 80%;
-	height: auto;
-	/*align-self: center;*/
-	/*margin-left: 9%;*/
-	margin-top: 13px;
-	margin-right:19%;
+	height: 100%;
+	width: auto;
 }
 #AboutMC{
 	width: 70%;
@@ -602,6 +600,18 @@ img {
 
 
 @media screen and (min-width: 750px){
+	div .Columns{
+		display: inline-block;
+		vertical-align: top;
+	}
+	.CompanyLogo img {
+		width: 80%;
+		height: auto;
+		/*align-self: center;*/
+		/*margin-left: 9%;*/
+		margin-top: 13px;
+		margin-right:19%;
+	}
 	#AboutTitle p{
 		font-size: 100px;
 		letter-spacing: 8px;
