@@ -1,7 +1,8 @@
 # martinchu.github.io
 
-## deployment to Heroku
+## Deployment to Heroku
 ```
+$ git add *
 $ git commit -m "..."
 $ git push herkou develop:master
 ```
