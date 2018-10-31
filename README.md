@@ -1,6 +1,7 @@
-#martinchu.github.io
+# martinchu.github.io
 
-##deployment to Heroku
+## deployment to Heroku
+```
 $ git commit -m "..."
 $ git push herkou develop:master
-
+```
