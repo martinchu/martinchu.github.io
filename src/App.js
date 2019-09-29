@@ -1,28 +1,44 @@
-import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { Component, useState } from 'react'
+import { makeStyles } from '@material-ui/styles'
+import logo from './logo.svg'
+import AppBar from '@material-ui/core/AppBar'
+import Toolbar from '@material-ui/core/Toolbar'
+import Typography from '@material-ui/core/Typography'
+import Button from '@material-ui/core/Button'
+import IconButton from '@material-ui/core/IconButton'
+import MenuIcon from '@material-ui/icons/Menu'
+import './App.css'
+import HomePage from './Page/Home'
+import Routes from '../Router/Route'
 
-class App extends Component {
-  render() {
-    return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
-      </div>
-    );
+const useStyles = makeStyles({
+  root: {
+    flexGrow: 1
+  },
+  menuButton: {
+    marginRight: 2
+  },
+  title: {
+    flexGrow: 1
   }
-}
+})
 
-export default App;
+export default function App () {
+  const classes = useStyles()
+  const routeResult = useRoutes(Routes)
+  return (
+    <div>
+      <AppBar position="static">
+        <Toolbar>
+          <IconButton edge="start" className={classes.menuButton} color="inherit" aria-label="menu">
+            <MenuIcon />
+          </IconButton>
+          <Typography variant="h6" className={classes.title}>
+            martin chu
+          </Typography>
+        </Toolbar>
+      </AppBar>
+      <HomePage/>
+    </div>
+  )
+}
